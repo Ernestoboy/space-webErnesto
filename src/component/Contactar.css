@@ -1,0 +1,463 @@
+.seccion-contactar {
+  position :relative;
+width:100vw;
+height:100vh;
+background:grey;
+background:linear-gradient(-40deg,rgb(62,80,193,1) , rgb(29,146,226,1));
+
+
+display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000000;
+}
+
+.contenedor-contactar {
+  position :relative;
+width:95vw;
+height:80vh;
+border-radius: 1vw;
+box-shadow: 1px 1px 20px 10px rgb(74,158,255,0.3);
+display: flex;
+}
+
+
+.contenedor-1 {
+  position :relative;
+width:30%;
+height:100%;
+background:linear-gradient(-40deg,rgb(62,80,193,1) ,rgb(37,129,217,1)  );
+display:flex;
+justify-content: center;
+align-items: center;
+}
+
+
+  
+.contenido-1-izquierdo {
+  position: relative;
+  
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+  border-bottom-right-radius: 22vw;
+}
+
+
+
+.contenido-1-izquierdo p {
+  position: relative;
+  width: 90%;
+  margin: 0vw 0vw 0vw 0vw;
+}
+
+
+.titulo-metodous {
+  position:relative;
+  font-family: Segoe UI Symbol;
+  font-size: 2vw;
+  font-weight: 100;
+  margin: 0vh 0vh 0vh 0vh;
+  color: aqua;
+  padding: 0vw 0vw 0vw 0vw;
+  text-align: center;
+  
+}
+
+
+.comentario {
+  font-family: Segoe UI Symbol;
+  font-size: 1.1vw;
+  color: white;
+  margin: 1.5vh 0vh 1.5vh 0vh;
+}
+
+
+.ListaMetodoDeTrabajo {
+  font-family: Segoe UI Symbol;
+  font-size: 1.1vw;
+  background: rgb(29, 146, 226, 0.4);
+  color: white;
+  border-left: 0.2vw solid rgb(29, 146, 226, 1);
+  border-bottom: 0.2vw solid rgb(29, 146, 226, 1);
+  padding: 1.5vh 0vh 1.5vh 1.5vh;
+}
+
+.contenedor-2 {
+  position :relative;
+width:35%;
+height:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(0,0,0,0.1);
+ z-index: 1000000000;
+}
+
+
+
+.contenedor-form {
+  position: absolute;
+  width:max-content;
+  height:max-content;
+  background-size: cover;
+  box-shadow: 0px 6px 6px 4px rgb(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+  z-index: 10000;
+  border-radius: 5%;
+  background:crimson; 
+  background:linear-gradient(-40deg,rgb(62,80,193,1) , rgb(29,146,226,1));
+  z-index: 100000000000000000000;
+  
+  }
+
+
+
+
+
+form {
+  position: relative;
+  width: 25vw;
+  height:73vh;
+   
+ background:rgb(0,0,0,0.5);
+ background:rgb(255,255,255,0.7);
+ background:linear-gradient(120deg,rgb(250,100,154,255),rgb(250,100,154,0.7),rgb(250,100,154,1)); 
+  background:linear-gradient(120deg,rgb(255,255,255,0.8),rgb(255,255,255,0.6),rgb(255,255,255,0.8)); 
+ background:linear-gradient(120deg,rgb(50,110,200),rgb(50,110,200,0.7),rgb(50,110,200));
+background:linear-gradient(120deg,rgb(50,110,200,0.8),rgb(50,110,200,0.8),rgb(50,110,200,0.8)); 
+ background: linear-gradient(120deg,white,rgb(241,241,242,0.8),rgb(255,255,255,0.7),rgb(241,241,242,0.8));
+ background:linear-gradient(120deg,rgb(250,100,154,255),rgb(250,100,154,0.7),rgb(250,100,154,1)); 
+ background:linear-gradient(120deg,rgb(250,100,154,255),rgb(250,100,154,0.7),rgb(250,100,154,1));
+ background:linear-gradient(120deg,rgb(0,120,215,0,0.9),rgb(0,120,215,0.7),rgb(0,120,215,0.9)); 
+ background:linear-gradient(120deg,rgb(0,120,215,0.9),rgb(0,120,215,0.7),rgb(0,120,215,0.9)); 
+ background:linear-gradient(120deg,rgb(250,100,154,255),rgb(250,100,154,0.7),rgb(250,100,154,1));
+  background:linear-gradient(120deg,rgb(0,120,215,0.8),rgb(0,120,215,0.7),rgb(0,120,215,0.8)); 
+  background:linear-gradient(120deg,rgb(250,100,154,0.8),rgb(250,100,154,0.7),rgb(250,100,154,0.8)); 
+   
+ background:rgb(255,255,255,0.0); 
+  display: flex;
+  justify-content: space-around;
+  border-radius: 5%;
+  flex-wrap: wrap;
+z-index: 100000000000000000000000000;
+  
+}
+
+
+.titulo-contactarme {
+  position: relative;
+  width: 100%;
+  margin: 0vw 0vw 0vw 0vw;
+  padding:1vh 0vh 1vh 0vh; 
+  font-size: 1.9vw;
+  color: white;
+  font-family: Segoe UI Symbol;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:rgb(255,255,255,0.0);
+  box-shadow: none;
+  text-decoration: underline;
+}
+
+
+label {
+  width: 90%;
+  font-size: 1.2vw;
+  color: white;
+  font-family: Segoe UI Symbol;
+ padding:0vh 0vh 0vh 0vh; 
+  
+}
+
+  
+
+input,
+textarea  {
+  background:white;
+  width:90%;
+  height: 4.3vh;
+  margin: 1vh 0vh 2vh 0vh;
+  cursor: pointer;
+  font-size: 1.2vw;
+  font-family: Segoe UI Symbol;
+   
+  color: rgb(45,45,45);
+  border: 0.45vh solid rgb(253,200,1);
+  box-shadow: 5px 7px 10px 4px rgb(0, 0, 0, 0.2);
+  border-radius: 1vw;
+  outline: none;
+  z-index: 10000000000000000;
+}
+
+  
+textarea {
+  height: 30vh;
+}
+
+
+
+  
+button {
+  width: 100%;
+  height: 10%;
+    margin-top: 2vh;
+font-size: 2vw;
+  color: white;
+  background: linear-gradient(120deg,gold,rgb(255,183,1,0.8));
+border-radius: 0.5vw; 
+border:none;
+box-shadow: 2px 4px 6px 2px rgb(0,0,0,0.2);
+  font-family: Segoe UI Symbol;
+  z-index: 1000000000000;
+}
+
+  
+  .espacial {
+    position: absolute;
+    right: 10%;
+  width: 15%;
+  height: 67%;
+  top:16.5%;  
+  background: url("../gallery/nave2.png");
+  background-size: cover;
+
+
+}
+
+.espacial p {
+    position: relative;
+   right: 30%;
+   top:45%;
+  background:  linear-gradient(-40deg,rgb(62,80,193,0.9) ,rgb(37,129,217,0.9) );
+  color:aqua;
+  padding: 1vh;
+  border-radius: 1vw;
+  font-size:1.05vw ;
+}
+
+
+.espacial p i {
+  position: absolute;
+  padding: 0.2vh 1vh 0.2vh 1vh;
+  left:-2.5vh;
+  top:-1.5vh;
+  color:yellow;
+  background: rgb(37,129,217,0.9);
+  border-radius: 50%;
+ border-bottom: 0.4vh solid yellow;
+ font-size: 1.2vw;
+}
+
+
+
+
+
+@media only screen and (min-width: 280px) and (max-width: 1024px) {
+
+  .seccion-contactar {
+    position :relative;
+  width:100vw;
+  height:180vh;
+  background:grey;
+  background:linear-gradient(-40deg,rgb(62,80,193,1) , rgb(29,146,226,1));
+  
+  
+  display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000000;
+  }
+  
+  .contenedor-contactar {
+    position :relative;
+  width:95vw;
+  height:170vh;
+  border-radius: 1vw;
+  box-shadow: 1px 1px 20px 10px rgb(74,158,255,0.3);
+  display: flex;
+  flex-wrap: wrap-reverse;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+
+
+  .contenedor-1 {
+    position :relative;
+  width:30%;
+  height:100%;
+  background:linear-gradient(-40deg,rgb(62,80,193,1) ,rgb(37,129,217,1)  );
+  display:none;
+  justify-content: center;
+  align-items: center;
+  }
+  .contenedor-2 {
+    position :relative;
+  width:95%;
+  height:80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0,0,0,0.1);
+   z-index: 1000000000;
+  }
+  
+  
+  
+
+form {
+  position: relative;
+  width: 85vw;
+  height:72vh;
+   
+ background:rgb(0,0,0,0.5);
+ background:rgb(255,255,255,0.7);
+ background:linear-gradient(120deg,rgb(250,100,154,255),rgb(250,100,154,0.7),rgb(250,100,154,1)); 
+  background:linear-gradient(120deg,rgb(255,255,255,0.8),rgb(255,255,255,0.6),rgb(255,255,255,0.8)); 
+ background:linear-gradient(120deg,rgb(50,110,200),rgb(50,110,200,0.7),rgb(50,110,200));
+background:linear-gradient(120deg,rgb(50,110,200,0.8),rgb(50,110,200,0.8),rgb(50,110,200,0.8)); 
+ background: linear-gradient(120deg,white,rgb(241,241,242,0.8),rgb(255,255,255,0.7),rgb(241,241,242,0.8));
+ background:linear-gradient(120deg,rgb(250,100,154,255),rgb(250,100,154,0.7),rgb(250,100,154,1)); 
+ background:linear-gradient(120deg,rgb(250,100,154,255),rgb(250,100,154,0.7),rgb(250,100,154,1));
+ background:linear-gradient(120deg,rgb(0,120,215,0,0.9),rgb(0,120,215,0.7),rgb(0,120,215,0.9)); 
+ background:linear-gradient(120deg,rgb(0,120,215,0.9),rgb(0,120,215,0.7),rgb(0,120,215,0.9)); 
+ background:linear-gradient(120deg,rgb(250,100,154,255),rgb(250,100,154,0.7),rgb(250,100,154,1));
+  background:linear-gradient(120deg,rgb(0,120,215,0.8),rgb(0,120,215,0.7),rgb(0,120,215,0.8)); 
+  background:linear-gradient(120deg,rgb(250,100,154,0.8),rgb(250,100,154,0.7),rgb(250,100,154,0.8)); 
+   
+ background:rgb(255,255,255,0.0); 
+  display: flex;
+  justify-content: space-around;
+  border-radius: 5%;
+  flex-wrap: wrap;
+z-index: 100000000000000000000000000;
+  
+}
+
+
+
+.titulo-contactarme {
+  position: relative;
+  width: 100%;
+  margin: 0vw 0vw 0vw 0vw;
+  padding:1vh 0vh 1vh 0vh; 
+  font-size: 3.2vh;
+  color: white;
+  font-family: Segoe UI Symbol;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:rgb(255,255,255,0.0);
+  box-shadow: none;
+  text-decoration: underline;
+}
+
+
+label {
+  width: 90%;
+  font-size: 2.4vh;
+  color: white;
+  font-family: Segoe UI Symbol;
+ padding:0vh 0vh 0vh 0vh; 
+  
+}
+
+  
+
+input,
+textarea  {
+  background:white;
+  width:90%;
+  height: 4.3vh;
+  margin: 1vh 0vh 2vh 0vh;
+  cursor: pointer;
+  font-size: 2.3vh;
+  font-family: Segoe UI Symbol;
+   
+  color: rgb(45,45,45);
+  border: 0.45vh solid rgb(253,200,1);
+  box-shadow: 5px 7px 10px 4px rgb(0, 0, 0, 0.2);
+  border-radius: 1vw;
+  outline: none;
+  z-index: 10000000000000000;
+}
+
+  
+textarea {
+  height: 30vh;
+}
+
+
+
+  
+button {
+  width: 100%;
+  height: 10%;
+    margin-top: 2vh;
+font-size: 3vh;
+  color: white;
+  background: linear-gradient(120deg,gold,rgb(255,183,1,0.8));
+border-radius: 0.5vw; 
+border:none;
+box-shadow: 2px 4px 6px 2px rgb(0,0,0,0.2);
+  font-family: Segoe UI Symbol;
+  z-index: 1000000000000;}
+
+
+  
+  .espacial {
+    position: relative;
+    right: 0%;
+  width: 70%;
+  height: 65vh;
+
+  background: url("../gallery/nave2.png");
+  background-size: cover;
+ top:0%;
+
+}
+ 
+
+.espacial p {
+  position: relative;
+ right: 10%;
+ top:45%;
+background:  linear-gradient(-40deg,rgb(62,80,193,0.9) ,rgb(37,129,217,0.9) );
+color:aqua;
+padding: 1.5vh;
+border-radius: 1vw;
+font-size:2.2vh ;
+}
+
+
+.espacial p i {
+position: absolute;
+padding: 0.2vh 1vh 0.2vh 1vh;
+left:-2.5vh;
+top:-1.5vh;
+color:yellow;
+background: rgb(37,129,217,0.9);
+border-radius: 50%;
+border-bottom: 0.5vh solid yellow;
+font-size: 4vw;
+}
+
+
+
+
+
+      
+  }
