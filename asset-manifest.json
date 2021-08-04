@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/space-webErnesto/static/css/main.33c0b7da.chunk.css",
-    "main.js": "/space-webErnesto/static/js/main.297b085a.chunk.js",
-    "main.js.map": "/space-webErnesto/static/js/main.297b085a.chunk.js.map",
-    "runtime-main.js": "/space-webErnesto/static/js/runtime-main.a1f101d3.js",
-    "runtime-main.js.map": "/space-webErnesto/static/js/runtime-main.a1f101d3.js.map",
-    "static/js/2.9a26f553.chunk.js": "/space-webErnesto/static/js/2.9a26f553.chunk.js",
-    "static/js/2.9a26f553.chunk.js.map": "/space-webErnesto/static/js/2.9a26f553.chunk.js.map",
-    "static/js/3.68c91c00.chunk.js": "/space-webErnesto/static/js/3.68c91c00.chunk.js",
-    "static/js/3.68c91c00.chunk.js.map": "/space-webErnesto/static/js/3.68c91c00.chunk.js.map",
+    "main.css": "/space-webErnesto/static/css/main.336f02a7.chunk.css",
+    "main.js": "/space-webErnesto/static/js/main.a8834fe2.chunk.js",
+    "main.js.map": "/space-webErnesto/static/js/main.a8834fe2.chunk.js.map",
+    "runtime-main.js": "/space-webErnesto/static/js/runtime-main.6fd7efdb.js",
+    "runtime-main.js.map": "/space-webErnesto/static/js/runtime-main.6fd7efdb.js.map",
+    "static/js/2.958560a0.chunk.js": "/space-webErnesto/static/js/2.958560a0.chunk.js",
+    "static/js/2.958560a0.chunk.js.map": "/space-webErnesto/static/js/2.958560a0.chunk.js.map",
+    "static/js/3.3ac199b1.chunk.js": "/space-webErnesto/static/js/3.3ac199b1.chunk.js",
+    "static/js/3.3ac199b1.chunk.js.map": "/space-webErnesto/static/js/3.3ac199b1.chunk.js.map",
     "index.html": "/space-webErnesto/index.html",
-    "static/css/main.33c0b7da.chunk.css.map": "/space-webErnesto/static/css/main.33c0b7da.chunk.css.map",
-    "static/js/2.9a26f553.chunk.js.LICENSE.txt": "/space-webErnesto/static/js/2.9a26f553.chunk.js.LICENSE.txt",
+    "static/css/main.336f02a7.chunk.css.map": "/space-webErnesto/static/css/main.336f02a7.chunk.css.map",
+    "static/js/2.958560a0.chunk.js.LICENSE.txt": "/space-webErnesto/static/js/2.958560a0.chunk.js.LICENSE.txt",
     "static/media/Diseños1.css": "/space-webErnesto/static/media/webs1.b99d54a0.png",
     "static/media/Diseños2.css": "/space-webErnesto/static/media/categorias1.c4763f68.svg",
     "static/media/all.min.css": "/space-webErnesto/static/media/fa-solid-900.46fdbd2d.woff",
     "static/media/Contactar.css": "/space-webErnesto/static/media/nave2.64644ffd.png",
-    "static/media/Inicio.css": "/space-webErnesto/static/media/tec-sass1.640f051a.png"
+    "static/media/Inicio.css": "/space-webErnesto/static/media/tec-sass1.347ef7b8.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.a1f101d3.js",
-    "static/js/2.9a26f553.chunk.js",
-    "static/css/main.33c0b7da.chunk.css",
-    "static/js/main.297b085a.chunk.js"
+    "static/js/runtime-main.6fd7efdb.js",
+    "static/js/2.958560a0.chunk.js",
+    "static/css/main.336f02a7.chunk.css",
+    "static/js/main.a8834fe2.chunk.js"
   ]
 }
