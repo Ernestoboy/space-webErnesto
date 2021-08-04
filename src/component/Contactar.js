@@ -35,15 +35,12 @@ const Contactar = (props) => {
   };
 
 
-  const SeccionContactar = {
-    position:"relative",
-  width:"100vw",
-  height:"100vh",
+  const ColorBackground = {
+    position:"absolute",
+  width:"100%",
+  height:"100%",
   background: fondo === "oscuro" ? "linear-gradient(rgb(8,8,95),rgb(6,6,102,0.8),rgb(8,8,95))" : "linear-gradient(-40deg,rgb(62,80,193,1) , rgb(29,146,226,1))" ,
-  display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-     zIndex:"10",
+ 
   }
   const FondoColor = (e) => {
     const { name } = e.target;
@@ -51,7 +48,8 @@ const Contactar = (props) => {
     setFondo(name);
   };
   return (
-    <div style={SeccionContactar} ref={props.enlace}>
+    <div class="seccion-contactar" ref={props.enlace}>
+      <div style={ColorBackground} ></div>
       <div class="contenedor-contactar">
       <div className="contenedor-botones">
 <div className="botones">
