@@ -153,7 +153,7 @@ box-shadow: 1px 0px 4px 2px rgb(244,118,19,0.3);
    .tecnologias5 {
   top:0vh;
   right:0%;
-  background:url("../gallery/tec-react.png"); 
+  background:url("../gallery/tec-sass1.png"); 
   background-size: cover;
   }
   
@@ -168,7 +168,7 @@ box-shadow: 1px 0px 4px 2px rgb(244,118,19,0.3);
    .tecnologias7 {
    bottom: 0vh;
   left:0vh;
-  background:url("../gallery/tec-sass1.png"); 
+  background:url("../gallery/tec-react.png"); 
   background-size: cover;
   }
   

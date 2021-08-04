@@ -369,7 +369,7 @@ display: none;
 }
 
 
-.redes i {
+.redes a i {
   position: relative;
 font-size: 3.4vh;
 display: flex;
@@ -382,7 +382,7 @@ border-radius: 1vh;
 }
 
 
-.redes i p {
+.redes a i p {
   position: relative;
 
 font-family: Segoe UI Symbol;
