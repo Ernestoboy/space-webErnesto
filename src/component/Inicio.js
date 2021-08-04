@@ -90,9 +90,9 @@ function Inicio() {
 
 
 <div class="categorias-seccion-inicio">
-<i class="fas fa-sms"><p>restaurant</p></i>
-<i class="fas fa-sms"><p>restaurant</p></i>
-<i class="fas fa-address-card"><p>Portafolio</p></i>
+<i class="fas fa-address-book"><p>Blog</p></i>
+<i class="fas fa-folder-open"><p>Portafolio</p></i>
+<i class="fas fa-award"><p>Formacion</p></i>
 <i class="fas fa-store"><p>Tienda online</p></i>
 </div>
 

@@ -60,7 +60,7 @@ body {
   height:9vh;
   right:1.1%;
   top:1.7vh; 
-  z-index:100000000000;
+  z-index:2000;
   }
 
   
@@ -111,7 +111,7 @@ left:100%;
   box-shadow: 3px 3px 8px 4px rgb(255,255,255,0.2);
    background:white; 
   }
-  
+ 
   .redes:before {
   content: "";
   width: 95%;
@@ -135,8 +135,11 @@ font-size: 1.1vw;
 
 }
 
+.redes a {
+text-decoration:none;
+}
 
-.redes i {
+.redes a i {
   position: relative;
 font-size: 1.5vw;
 display: flex;
@@ -151,7 +154,7 @@ border-radius: 1vw;
 
 
 
-.redes i p {
+.redes a i p {
   position: relative;
 
 font-family: Segoe UI Symbol;
@@ -159,14 +162,16 @@ font-size: 1.1vw;
 color:white;
 padding: 0vh 0vw 0vh 0.3vw ;
 margin:0vh 0vh 0vh 0vh; 
+cursor: pointer;
 
 
 }
 
-.redes .fa-instagram {
+.redes a .fa-instagram {
 background:linear-gradient(120deg,fuchsia,crimson); 
 box-shadow: 1px 1px 5px 2px rgb(255,0,255,0.4);
 z-index: 2000;
+cursor: pointer;
 }
 
 

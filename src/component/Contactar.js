@@ -7,7 +7,7 @@ const Contactar = (props) => {
   
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-
+  const [fondo, setFondo] = useState();
   const [loader, setLoader] = useState(false);
 
   const handleSubmit = (e) => {
@@ -34,9 +34,31 @@ const Contactar = (props) => {
     setMessage("");
   };
 
+
+  const SeccionContactar = {
+    position:"relative",
+  width:"100vw",
+  height:"100vh",
+  background: fondo === "oscuro" ? "linear-gradient(rgb(8,8,95),rgb(6,6,102,0.8),rgb(8,8,95))" : "linear-gradient(-40deg,rgb(62,80,193,1) , rgb(29,146,226,1))" ,
+  display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+     zIndex:"10",
+  }
+  const FondoColor = (e) => {
+    const { name } = e.target;
+
+    setFondo(name);
+  };
   return (
-    <div class="seccion-contactar" ref={props.enlace}>
+    <div style={SeccionContactar} ref={props.enlace}>
       <div class="contenedor-contactar">
+      <div className="contenedor-botones">
+<div className="botones">
+      <button onClick={FondoColor} name="claro"><i class="fas fa-sun"></i></button>
+      <button onClick={FondoColor} name="oscuro"><i class="fas fa-moon"></i></button>
+</div>     
+</div>  
         <div class="contenedor-1">
           <div className="contenido-1-izquierdo">
             <p className="titulo-metodous">Metodo de trabajo</p>
@@ -93,7 +115,10 @@ const Contactar = (props) => {
             <i>3</i>Manténte actualizado.
           </p>
           </div>
+         
+
         </div>
+   
       </div>
   );
 }

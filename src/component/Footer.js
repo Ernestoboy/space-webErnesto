@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import "./Footer.css";
 
-class Footer extends Component {
-  render() {
-    return (
-      <div className="contenedor-footer">
+function Footer(props) {
+  return (
+      <div className="contenedor-footer" ref={props.enlace}>
         <div className="conteIzquierdo">
           <p className="TituloFooter">Categorias</p>
           <p>
@@ -46,8 +45,7 @@ class Footer extends Component {
 
        
       </div>
-    );
-  }
+  );
 }
 
 export default Footer;

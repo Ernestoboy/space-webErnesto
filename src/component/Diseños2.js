@@ -13,12 +13,12 @@ function Diseños2() {
 <div className="contenedor-categorias">
 
 <div class="categoria">
-<i className="fas fa-address-card"></i>
+<i class="fas fa-address-book"></i>
 BLOG . ten tu portal web , publica articulos expresando tus 
 opiniones de determinados temas que deceas compartirles a los demas
 </div>
 <div class="categoria">
-<i className="fas fa-address-card"></i>
+<i class="fas fa-folder-open"></i>
 
 PORTAFOLIO .diseñador grafico , fotografo , creador de contenido ... , 
 necesitas una buena forma de mostrar tus trabajos y habilidades .
@@ -32,7 +32,7 @@ de alguno de tus productos .
 </div>
 
 <div class="categoria">
-<i className="fas fa-address-card"></i>
+<i class="fas fa-award"></i>
 FORMACION . eres un experto en tu area y te gustaria implementar
      una ruta de aprendizaje , esta pagina es para ti  , para aquellas personas que buscan un buen
      aprendizaje .
