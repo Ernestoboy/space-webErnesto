@@ -166,7 +166,7 @@ box-shadow: 1px 0px 4px 2px rgb(244,118,19,0.3);
   
   
    .tecnologias7 {
-   bottom: 0vh;
+  bottom: 0vh;
   left:0vh;
   background:url("../gallery/tec-react.png"); 
   background-size: cover;
