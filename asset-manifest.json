@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/space-webErnesto/static/css/main.af768a9e.chunk.css",
+    "main.css": "/space-webErnesto/static/css/main.88a51782.chunk.css",
     "main.js": "/space-webErnesto/static/js/main.7243bc26.chunk.js",
     "main.js.map": "/space-webErnesto/static/js/main.7243bc26.chunk.js.map",
     "runtime-main.js": "/space-webErnesto/static/js/runtime-main.6fd7efdb.js",
@@ -10,7 +10,7 @@
     "static/js/3.3ac199b1.chunk.js": "/space-webErnesto/static/js/3.3ac199b1.chunk.js",
     "static/js/3.3ac199b1.chunk.js.map": "/space-webErnesto/static/js/3.3ac199b1.chunk.js.map",
     "index.html": "/space-webErnesto/index.html",
-    "static/css/main.af768a9e.chunk.css.map": "/space-webErnesto/static/css/main.af768a9e.chunk.css.map",
+    "static/css/main.88a51782.chunk.css.map": "/space-webErnesto/static/css/main.88a51782.chunk.css.map",
     "static/js/2.958560a0.chunk.js.LICENSE.txt": "/space-webErnesto/static/js/2.958560a0.chunk.js.LICENSE.txt",
     "static/media/Diseños1.css": "/space-webErnesto/static/media/webs1.b99d54a0.png",
     "static/media/Diseños2.css": "/space-webErnesto/static/media/categorias1.c4763f68.svg",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.6fd7efdb.js",
     "static/js/2.958560a0.chunk.js",
-    "static/css/main.af768a9e.chunk.css",
+    "static/css/main.88a51782.chunk.css",
     "static/js/main.7243bc26.chunk.js"
   ]
 }
