@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/space-webErnesto/static/css/main.af768a9e.chunk.css",
-    "main.js": "/space-webErnesto/static/js/main.d3f10555.chunk.js",
-    "main.js.map": "/space-webErnesto/static/js/main.d3f10555.chunk.js.map",
+    "main.js": "/space-webErnesto/static/js/main.7243bc26.chunk.js",
+    "main.js.map": "/space-webErnesto/static/js/main.7243bc26.chunk.js.map",
     "runtime-main.js": "/space-webErnesto/static/js/runtime-main.6fd7efdb.js",
     "runtime-main.js.map": "/space-webErnesto/static/js/runtime-main.6fd7efdb.js.map",
     "static/js/2.958560a0.chunk.js": "/space-webErnesto/static/js/2.958560a0.chunk.js",
@@ -22,6 +22,6 @@
     "static/js/runtime-main.6fd7efdb.js",
     "static/js/2.958560a0.chunk.js",
     "static/css/main.af768a9e.chunk.css",
-    "static/js/main.d3f10555.chunk.js"
+    "static/js/main.7243bc26.chunk.js"
   ]
 }
