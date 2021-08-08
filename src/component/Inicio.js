@@ -38,7 +38,7 @@ function Inicio() {
 <div class="contenedor-bienvenido">
 	<p class="bienvenido">Bienvenido</p>
  Un placer poder tenerte por aqui , Mi nombre es Ernesto Ulloa
-              ,estoy involugrado en el desarrollo de paginas web esto claro con
+              ,estoy involucrado en el desarrollo de paginas web esto claro con
               buenas tecnologias (frameworks , lenguajes de programacion , etc )
               .
 </div>
