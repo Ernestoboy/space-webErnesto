@@ -6,8 +6,7 @@ display:flex;
 justify-content:center;
 align-items:center;
 flex-wrap:wrap;
-background:linear-gradient(rgb(50,110,200,1),rgb(50,110,200,0.8),rgb(50,110,200,1));
-
+background: linear-gradient(132deg, rgb(2, 28, 75) 0.00%, rgb(36, 83, 235) 94.78%);
 
 }
 
@@ -47,8 +46,7 @@ box-shadow: 1px 0px 4px 2px rgb(244,118,19,0.3);
   height: 140vh;
   left:0%;
   top:-20vh;
-  background:black; 
-   background-size: cover;
+  background-size: cover;
   border-top-right-radius:100%; 
   border-bottom-right-radius:50%;  
   box-shadow: 1px 1px 6px 3px rgb(0,0,0,0.3);
@@ -56,8 +54,10 @@ box-shadow: 1px 0px 4px 2px rgb(244,118,19,0.3);
   background-size: cover;
   z-index: 10;
   
+  
   }
   
+
   .contenedor-izquierdo:before , .raro:before {
   content: "";
   position: absolute;
@@ -71,7 +71,17 @@ box-shadow: 1px 0px 4px 2px rgb(244,118,19,0.3);
   border-bottom-right-radius:50%;  
   }
   
+.img-perfil {
+  position: absolute;
+  background:url("../gallery/perfil-1.png"); 
+  width: 22vw;
+  height: 85vh;
+  background-size: cover;
+  top:5vh; 
+  left:17%;
+  
 
+}
   
  .contenedor-giratorio {
   position: absolute;
@@ -184,10 +194,10 @@ box-shadow: 1px 0px 4px 2px rgb(244,118,19,0.3);
 
   .nave-espacial  {
     position: absolute;
-    top:47vh;
+    top:50vh;
     right: 0%;
-    width: 15vw;
-    height: 15vw;
+    width: 13vw;
+    height: 13vw;
     border:1vh solid rgb(240,240,240); 
     display: flex;
     justify-content: center;
@@ -205,6 +215,7 @@ box-shadow: 1px 0px 4px 2px rgb(244,118,19,0.3);
     position: absolute;
     width: 15vw;
     height:20.33vw;
+
     background:url("../gallery/nave1.png"); 
     background-size: cover;
     z-index: 10000000000;
@@ -236,7 +247,6 @@ box-shadow: 1px 0px 4px 2px rgb(244,118,19,0.3);
   z-index: 1000;
   
   
-  
   }
 
 
@@ -248,11 +258,11 @@ box-shadow: 1px 0px 4px 2px rgb(244,118,19,0.3);
    width: 100%;
    margin:0vh 0vh 0vh 0vh; 
   background:-webkit-linear-gradient(40deg,tomato,orange);
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;  
+  
   border-bottom: 1vh solid rgb(240,240,240,1);
   z-index: 10000;
   font-family: 'Dancing Script' , cursive;  
+  color:white;
   }
   
   
@@ -387,12 +397,13 @@ font-family: 'Dancing Script' , cursive;
   
 
   
-@media only screen and (min-width: 280px) and (max-width: 1024px) {
-
+@media only screen and (min-width: 280px) and (max-width: 840px) {
+  
   
   .seccion-inicio {
  overflow: hidden;
-  
+
+   
   }
   
 
@@ -422,6 +433,14 @@ font-family: 'Dancing Script' , cursive;
   
   } 
 
+  .img-perfil {
+    width: 65vw;
+    height: 70vh;
+    top:20vh; 
+    left:10%;
+  
+  }
+    
 
   .contenedor-giratorio {
     width: 80vh;
@@ -553,4 +572,27 @@ font-family: 'Dancing Script' , cursive;
           
           }
 
-  }
+          @media only screen and (min-width: 1000px) and (max-width: 1200px ) {
+            .img-perfil {
+              width: 65vw;
+              height: 70vh;
+              top:-50vh; 
+              left:10%;
+            
+            }
+          } 
+
+          @media screen and (min-width:500px) {
+            .img-perfil {
+              width: 65vw;
+              height: 90vh;
+              top:0vh; 
+              left:10%;
+            
+            }
+          } 
+          }
+          
+
+
+  

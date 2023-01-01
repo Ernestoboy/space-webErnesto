@@ -13,7 +13,7 @@ function Inicio() {
 <div class="contenedor-izquierdo">
 	
 
-
+<div class="img-perfil"></div>
 
 
 <div class="contenedor-giratorio">

@@ -1,13 +1,80 @@
 .seccion-diseño {
   position: relative;
   width: 100%;
-  height: 210vh;
+  height: 310vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background:linear-gradient(rgb(50,110,200,1),rgb(50,110,200,0.8),rgb(50,110,200,1));
-  
+  background: linear-gradient(132deg,  rgb(2, 28, 90) 0.00%, rgb(36, 83, 235) 94.78% );
+
+
+} 
+
+
+.alto {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: 10000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
+
+.alto:before {
+  position: absolute;
+content: "";
+width: 100%;
+height: 50%;
+bottom: 20%;
+background:url("../gallery/conocimientos2.jpg"); 
+background-size:cover ;
+
+}
+
+
+.conocimientos {
+position: relative;
+width: 80%;
+height: 70%;
+background: linear-gradient(132deg, rgb(2, 100, 220,0.8) 0.00%, rgb(36, 83, 200,0.8) 94.78%);
+display: grid;
+justify-content: center;
+align-items: center;
+color:white;
+
+}
+
+.logo-tecnologias  {
+  position: relative;
+  width: 120%;
+  height: auto;
+  bottom: -3vh;
+  display: flex;
+left: -10%;
+justify-content: space-between;
+
+}
+
+.logo-tecnologias img  {
+  position: relative;
+  width: 2.5vw;
+  height: 2.5vw;
+  border-radius: 50%;
+  background-size: cover;
+ 
+border: 3px solid rgb(2, 28, 120);
+box-shadow: 3px 3px 10px 5px rgb(0,0,0,0.3);
+}
+
+
+
+.conocimientos h3 {
+  text-decoration: underline;
+  font-size: 1.7vw;
+}
+
 
 .contenido {
   position: absolute;
@@ -20,11 +87,12 @@
 .contenedor-izquierdo-img {
   position: absolute;
   width: 50%;
-  height: 190vh;
+  height: 300vh;
   display: flex;
   align-items:flex-start;
   flex-wrap: wrap;
   z-index: 10;
+  
 
 }
 
@@ -135,6 +203,7 @@
  
   border:1.6vh solid rgb(255, 255, 255, 0.2);
   border-bottom:1.6vh solid rgb(50,50,50);
+  
   }
 
   
@@ -162,26 +231,26 @@
   
   
   input[id="1"]:checked ~ .pagination .pagination-item[for="1"]{
-  background:rgb(50,110,200,0.8); 
-  
-  }
-  
-  
-  
-  input[id="2"]:checked ~  .slide{
-  animation:none;
-  transform: translate3d(calc(-100% * 1) , 0 , 0); 
-  
-  
-  }
-  
-  
-  input[id="2"]:checked ~ .pagination .pagination-item[for="2"]{
-  background:rgb(50,110,200,0.8); 
-  
-  }
-  
-  
+    background:rgb(50,110,200,0.8); 
+    
+    }
+    
+    
+    
+    input[id="2"]:checked ~  .slide{
+    animation:none;
+    transform: translate3d(calc(-100% * 1) , 0 , 0); 
+    
+    
+    }
+    
+    
+    input[id="2"]:checked ~ .pagination .pagination-item[for="2"]{
+    background:rgb(50,110,200,0.8); 
+    
+    }
+    
+    
   
   
   input[id="3"]:checked ~ .slide{
@@ -349,9 +418,10 @@ border:2px solid white;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background: rgb(255, 255, 255, 0.2);
+  background: rgb(255,255,255,0.2);
   border-bottom:1.6vh solid rgb(50,50,50);
   box-shadow: 1px 2px 6px 3px rgb(0, 0, 0, 0.1); 
+  
   
 }
 
@@ -391,7 +461,8 @@ border:2px solid white;
   height: 85vh;
   display: flex;
   align-items: center;
-
+  
+  
 }
 
 .conte-p-img5 {
@@ -532,10 +603,8 @@ border:2px solid white;
   position: absolute;
   width: 60.1%;
   height: 100%;
-  right: 0%;
-  background: rgb(50, 110, 200, 0.8);
- 
- 
+  right: 0%; 
+  background: rgb(36, 83, 175,0.5);
 }
 
 
@@ -552,9 +621,10 @@ border:2px solid white;
 }
 
 .contenido-derecho-texto p {
-  background: rgb(255, 255, 255, 0.1);
+
   padding: 1vh;
   margin: 0vh 0vh 0vh 0vh;
+
 }
 
 .conte-texto {
@@ -562,7 +632,7 @@ border:2px solid white;
   width: 21vw;
   height: max-content;
   border-bottom: 0.45vh solid white;
-  z-index: 100000000000000000000;
+ 
   color: white;
   
 }
@@ -571,7 +641,8 @@ border:2px solid white;
   position: relative;
   color: white;
   font-size: 1.6vw;
-  background: rgb(58,115,202);
+  background:rgb(58,115,210);
+  background:   rgb(2, 78, 210,1) ;
   margin: 3.5vh 0vh 0vh 0vh;
   font-family: "Dancing Script", cursive;
   
@@ -580,7 +651,8 @@ border:2px solid white;
 
 
   
-@media only screen and (min-width: 280px) and (max-width: 1024px) {
+@media only screen and (min-width: 280px) and (max-width: 840px) {
+
 
 
   .pagination-item:hover {
@@ -621,10 +693,9 @@ border:2px solid white;
   .seccion-diseño {
     position: relative;
     width: 100%;
-    height: 210vh;
-    background:linear-gradient(rgb(50,110,200,1),rgb(50,110,200,0.8),rgb(50,110,200,1));
+    height: 300vh;
+    
    
- 
   }
   
 
@@ -800,5 +871,78 @@ height: 69vh;
   
 }
 
+.conocimientos {
+  position: relative;
+  width: 85%;
+  height: 60%;
+  background: linear-gradient(132deg, rgb(2, 100, 220,0.8) 0.00%, rgb(36, 83, 200,0.8) 94.78%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  flex-wrap: wrap;
+  }
+
+
+.logo-tecnologias  {
+ 
+  height: 17vh;
+  
+  
+left: 0%;
+flex-wrap: wrap;
+
+
+
+}
+
+.conocimientos h3 {
+
+  font-size: 2.5vh;
+}
+
+
+  .conocimientos p {
+    font-size: 2.1vh;
+  }
+
+.logo-tecnologias img  {
+  
+ margin-left:2vw ;
+
+  width: 12vw;
+  height: 12vw;
+
+}
+
+
+@media screen and (min-width:540px) {
+  .logo-tecnologias  {
+ 
+    height: 22vh;
+    
+    
+  left: 0%;
+  flex-wrap: wrap;
+  
+  
+  
+  }
+
+  .logo-tecnologias img  {
+  
+    
+   
+     width: 10.5vw;
+     height: 10.5vw;
+   
+   }
+
+
+
+
+} 
+
+  
 
 }

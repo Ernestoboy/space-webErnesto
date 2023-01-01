@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Contactar.css";
+import Swal from "sweetalert2";
 
 import { db } from "../firebase";
 
@@ -22,7 +23,14 @@ const Contactar = (props) => {
       })
       .then(() => {
         setLoader(false);
-        alert("Your message has been submitted");
+Swal.fire({
+  title:"Formulario enviado", 
+  text:"Pronto me pondre en contacto contigo",
+  icon:"success",
+  showConfirmButton: false,
+  timer:"5000",
+  })        
+ 
       })
       .catch((error) => {
         alert(error.message);
@@ -39,7 +47,7 @@ const Contactar = (props) => {
     position:"absolute",
   width:"100%",
   height:"100%",
-  background: fondo === "oscuro" ? "linear-gradient(rgb(8,8,95),rgb(6,6,102,0.8),rgb(8,8,95))" : "linear-gradient(-40deg,rgb(62,80,193,1) , rgb(29,146,226,1))" ,
+  background: fondo === "oscuro" ? "linear-gradient(rgb(8,8,95),rgb(6,6,102,0.8),rgb(8,8,95))" : "linear-gradient(132deg, rgb(2, 28, 75) 0.00%, rgb(36, 83, 255) 94.78%)" ,
  
   }
   const FondoColor = (e) => {
@@ -48,7 +56,7 @@ const Contactar = (props) => {
     setFondo(name);
   };
   return (
-    <div class="seccion-contactar" ref={props.enlace}>
+    <div class="seccion-contactar" >
       <div style={ColorBackground} ></div>
       <div class="contenedor-contactar">
       <div className="contenedor-botones">
@@ -82,7 +90,7 @@ const Contactar = (props) => {
             </p>
           </div>
         </div>
-        <div class="contenedor-2">
+        <div class="contenedor-2" ref={props.enlace}>
           <div class="contenedor-form">
             <form onSubmit={handleSubmit}>
               <p class="titulo-contactarme">Contactarme</p>
@@ -92,11 +100,12 @@ const Contactar = (props) => {
                value={email}
                onChange={(e) => setEmail(e.target.value)}/>
 
-              <textarea placeholder="Cuentame acerca de tu negocio"  value={message}
+              <textarea placeholder="Cuentame un poco de tu negocio"  value={message}
           onChange={(e) => setMessage(e.target.value)}></textarea>
 
               <button type="submit">
-                Registrarte
+                Enviar
+             
               </button>
             </form>
           </div>

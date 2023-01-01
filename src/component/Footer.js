@@ -1,7 +1,10 @@
 import React, { Component } from "react";
+import { useState } from "react";
 import "./Footer.css";
-
+import {CopyToClipboard} from "react-copy-to-clipboard";
 function Footer(props) {
+  const [copiado , setCopiado] = useState(false);
+
   return (
       <div className="contenedor-footer" ref={props.enlace}>
         <div className="conteIzquierdo">
@@ -22,10 +25,13 @@ function Footer(props) {
         <div className="conteDerecho">
           <p className="TituloFooter">Frameworks </p>
           <p>
-            React<i class="fab fa-react"></i>
+            React(jsx)<i class="fab fa-react"></i>
           </p>
           <p>
-            Angular<i class="fab fa-angular"></i>
+            Tailwind(css)
+          </p>
+          <p>
+            Express(node)
           </p>
         </div>
         <div className="contenedor-caracteristicas">
@@ -36,12 +42,18 @@ function Footer(props) {
             <p>--Registros de usuarios</p>
           </div>
         </div>
-        <div className="contenedor-github">
-          <i class="fab fa-github-square">
-            <p>Github</p>
-          </i>
-          <p>Correo: nellastesi@gmail.com</p>
-        </div>
+        <div className="contenedor-gmail">
+        <i class="fa fa-envelope">
+            <p>Gmail</p>
+            </i>
+            <p>Correo: edgar.guti2009@gmail.com</p>
+        <CopyToClipboard text="edgar.guti2009@gmail.com">
+        {copiado ?  <p className="copiado">Copiado en el portapapeles </p> : <p className="copiar" onClick={ () => setCopiado(true)}>Copiar</p>  }
+</CopyToClipboard>
+
+       
+          
+        </div>      
 
        
       </div>

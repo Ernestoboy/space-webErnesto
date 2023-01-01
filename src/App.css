@@ -1,3 +1,5 @@
+
+
 body {
   margin: 0;
   padding: 0;
@@ -10,7 +12,7 @@ body {
  display:flex;
  justify-content:center;
  flex-wrap: wrap;
-  
+ 
   
 }
 
@@ -34,7 +36,7 @@ body {
   flex-wrap: wrap;
   border-right:1vh solid rgb(255,255,255,0.1);  
   z-index: 10;
-  
+
   
   }
   
@@ -122,8 +124,8 @@ left:100%;
   
   }
 
-  
-.servicio-como {
+ 
+.descargar-cv {
   position: relative;
 width: max-content;
 padding: 1vh 0.5vw 1vh 0.5vw ;
@@ -132,11 +134,17 @@ background:white;
 box-shadow: 0px 0px 6px 2px rgb(0,0,0,0.1); 
 font-family: Segoe UI Symbol;
 font-size: 1.1vw;
+color:black;
 
+}
+
+.redes {
+  cursor: pointer;
 }
 
 .redes a {
 text-decoration:none;
+cursor: pointer;
 }
 
 .redes a i {
@@ -149,6 +157,8 @@ background:rgb(50,50,50);
 box-shadow: 1px 1px 6px 2px rgb(0,0,0,0.2);
 padding: 1vh 0.5vw 1vh 0.5vw ;
 border-radius: 1vw;
+cursor: pointer;
+
 }
 
 
@@ -167,13 +177,11 @@ cursor: pointer;
 
 }
 
-.redes a .fa-instagram {
-background:linear-gradient(120deg,fuchsia,crimson); 
-box-shadow: 1px 1px 5px 2px rgb(255,0,255,0.4);
-z-index: 2000;
-cursor: pointer;
-}
-
+.redes a .fa-linkedin {
+  background:linear-gradient(120deg,#396afc,#2948ff); 
+  box-shadow: 1px 1px 5px 2px rgb(36, 83, 235,0.3);
+  cursor: pointer;
+  }
 
 
 
@@ -193,11 +201,12 @@ cursor: pointer;
   display: flex;
 justify-content: center;
 align-items: center;
-z-index: 100000000000000;
+z-index: 100;
+
 }
   
 
-nav {
+.Contenedor-navegacion nav {
   position: absolute;
   width: 25vw;
   height: 25vw;
@@ -211,9 +220,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-wrap: wrap;
-box-shadow: 0px 1px 6px 3px rgb(0,0,0,0.2);
-box-shadow: 3px 3px 10px 5px rgb(255,255,255,0.2);
-box-shadow: 3px 3px 8px 4px rgb(255,255,255,0.2);
+box-shadow: 3px 3px 8px 4px rgb(255,255,255,0.8);
 z-index: 100;
 background-size: cover;
 background:linear-gradient(120deg,rgb(62,80,193,1) , rgb(29,146,226,1));
@@ -221,11 +228,13 @@ background:linear-gradient(120deg,rgb(62,80,193,1) , rgb(29,146,226,1));
 
 background-size: cover;
 
+
+
 }
 
 
 
-nav:before {
+.Contenedor-navegacion nav:before {
   content: "";
 position: absolute;
 width: 10vw;
@@ -235,6 +244,9 @@ box-shadow: -1px 0px 0px 2px rgb(255,255,255,1);
 background:rgb(62,80,193,0.6) ;
 
 z-index: 10000;
+background:rgb(247,119,35,1) ;
+
+
 }
 
 .tab1 , .tab2 , .tab3 , .tab4{
@@ -250,7 +262,16 @@ z-index: 10000;
   font-family: Segoe UI Symbol;
   font-size: 1.3vw;
   color:white;
-  box-shadow: 0px 0px 6px 2px rgb(0,0,0,0.1);
+  box-shadow: 0px 0px 0px 3px rgb(247,159,35,0.5);
+ 
+
+
+  background: #FF512F;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F09819, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F09819, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+
+
   }
   
   
@@ -265,15 +286,18 @@ z-index: 10000;
   
   }
   
-
-  
-@media only screen and (min-width: 280px) and (max-width: 1024px) {
-
-  
-.fondo-circular {
-  display: none;  
+  .Contenedor-navegacion-movil {
+display: none;
   }
+
   
+@media only screen and (min-width: 280px) and (max-width: 840px) {
+
+  
+  .fondo-circular {
+    display: none;  
+    }
+    
   
   
   
@@ -283,7 +307,7 @@ z-index: 10000;
   position:fixed;
   width:max-content;
   height:max-content;
-  left:0vw;
+  left:0%;
   top:0vh; 
   z-index:100000000000000000;
  
@@ -291,16 +315,7 @@ z-index: 10000;
 
   
 .nombre {
-  position: absolute;
-  width:20vw;
-height: 7.5vh;
-display: flex;
-justify-content: center;
-align-items: center;
-left:0%;
-color:white;
-font-size:2vw; 
-font-family: 'Dancing Script' , cursive;
+
 display: none;
 }
 
@@ -321,8 +336,8 @@ left:100%;
   position: absolute;
   padding-right:2vw;
   padding-left:4vw;
-  left: 0%;
-  width: 40vw;
+  left:0%;
+  width: 75vw;
   height: 6vh;
   background:black;
   background:rgb(0,0,0,0.0); 
@@ -355,16 +370,17 @@ left:100%;
   }
 
   
-.servicio-como {
+.descargar-cv {
   position: relative;
 width: max-content;
-padding: 1vh 0.5vw 1vh 0.5vw ;
-border-radius:1vw;
+padding: 1vh 2vw 1vh 2vw ;
+border-radius:2vh;
 background:white;
-box-shadow: 0px 0px 6px 2px rgb(0,0,0,0.1); 
+box-shadow: 0px 0px 6px 2px rgb(0,0,0,0.2); 
 font-family: Segoe UI Symbol;
-font-size: 1.8vh;
-display: none;
+font-size: 2vh;
+
+
 
 }
 
@@ -404,14 +420,79 @@ z-index: 2000;
 
 
 .Contenedor-navegacion {
-display:none;
+display: none;
 }
   
 
+.Contenedor-navegacion-movil {
+
+
+    position:fixed;
+    top:0;
+    width: 11vw;
+    height: 8vh;
+    background: grey;
+      overflow: none;
+    right:0% ;
+    display: block;
+  z-index: 100000000000000;
   
+  background: rgb(255,150,29);
+   border-top-left-radius:40% ;
+   border-bottom-left-radius:40% ;
+   box-shadow: -2px -2px 1px 7px  rgb(255,255,255,0.2);
+   
+ 
+ font-size:2vh ;
+
+
+
+
+}
+
+
+
   
+
+
+
+
+.tab1-movil , .tab2-movil , .tab3-movil , .tab4-movil {
+
+ 
+color:white;
+padding: 2.5vh 0vh 2.5vh 0vw;
   
-  
+  margin: 0%;
+  box-shadow: 0px 0px 0px 1px  rgb(56,104,252,1);
+  display: grid;
+  justify-content: center;
+  align-items: center;
   }
+  
+  
+  .Contenedor-navegacion-movil  i {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:4.5vw;
+    color:white;
+
+  }
+
+  @media screen and (min-width:500px) {
+   .redes{
+    width: 50vw;
+   }
+    
+    }
+  } 
+
+
+  
+  
   
   

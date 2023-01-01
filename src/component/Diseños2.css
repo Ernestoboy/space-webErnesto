@@ -2,12 +2,11 @@
     position :relative;
   width:100vw;
   height:90vh;
-  background:grey;
   background:linear-gradient(rgb(8,8,95),rgb(6,6,102,0.8),rgb(8,8,95));
-  
   display: flex;
       justify-content: center;
       align-items: center;
+      
   }
   
 .seccion-categorias:before   
@@ -41,12 +40,12 @@ background-size:cover;
 {
      
   position:relative;
-  width: 19vw;
+  width: 17vw;
   height: max-content; 
   padding: 2vh 3vh 2vh 3vh;        
   
   font-family: Segoe UI Symbol;
-  font-size: 1.2vw;
+  font-size: 1.1vw;
   border-radius: 1vw;
   border-top: 0.7vh solid orange;
   border-bottom: 0.5vh solid rgb(62,80,193,1);
@@ -74,7 +73,7 @@ z-index: 10;
   }
 
 
-  @media only screen and (min-width: 280px) and (max-width: 1024px) {
+  @media only screen and (min-width: 280px) and (max-width: 840px) {
 
 
     .seccion-categorias {
