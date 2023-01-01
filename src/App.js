@@ -24,7 +24,7 @@ function App() {
     if (!ref)
       window.scroll({
         top: 0,
-        behavior: "smooth",
+        behavior: "smooth" ,
       });
     else ref.current.scrollIntoView({ behavior: "smooth" } )
 
