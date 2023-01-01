@@ -27,7 +27,7 @@ Swal.fire({
   title:"Formulario enviado", 
   text:"Pronto me pondre en contacto contigo",
   icon:"success",
-  showConfirmButton: false,
+  showConfirmButton: false ,
   timer:"5000",
   })        
  

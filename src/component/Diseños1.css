@@ -872,7 +872,7 @@ height: 69vh;
 }
 
 .conocimientos {
-  position: relative;
+  position: relative ;
   width: 85%;
   height: 60%;
   background: linear-gradient(132deg, rgb(2, 100, 220,0.8) 0.00%, rgb(36, 83, 200,0.8) 94.78%);

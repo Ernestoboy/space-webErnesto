@@ -502,14 +502,14 @@ font-size: 4vw;
 
 
 
-.contenedor-botones{
+.contenedor-botones {
   display: none;
   
   }
 
   @media screen and (min-width:840px) {
    
-form {
+form  {
   
   width: 70vw;
 

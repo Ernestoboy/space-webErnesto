@@ -10,7 +10,7 @@ function Diseños2() {
 
 
 
-<div className="contenedor-categorias">
+<div className="contenedor-categorias" >
 
 <div class="categoria">
 <i class="fas fa-address-book"></i>

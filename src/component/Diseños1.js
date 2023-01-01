@@ -9,7 +9,7 @@ import tailwind from "../gallery/tailwind.png";
 import sass from "../gallery/sass.jpg";
 import node from "../gallery/node.jpg";
 import git from "../gallery/git.jpg";
-import gitlab from "../gallery/Gitlab.png";
+import gitlab from "../gallery/Gitlab.png" ;
 
 
 function Diseños1(props) {

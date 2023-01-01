@@ -76,7 +76,7 @@ z-index: 10;
   @media only screen and (min-width: 280px) and (max-width: 840px) {
 
 
-    .seccion-categorias {
+    .seccion-categorias  {
       
     width:100vw;
     height:150vh;

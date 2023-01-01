@@ -193,7 +193,7 @@ color:limegreen;
   }
 
 
-    @media screen and (min-width:840px) {
+    @media screen and (min-width:840px)  {
       .contenedor-footer {
       height: 35vh;
     

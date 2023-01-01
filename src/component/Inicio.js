@@ -29,7 +29,7 @@ function Inicio() {
 </div>
 
 
-<div class="nave-espacial"></div>
+<div class="nave-espacial"> </div>
 
 
 

@@ -20,7 +20,7 @@ function App() {
   const enlaceskills = useRef(null);
   const [navmovil , setNavmovil] = useState(false);
 
-  const onScroll = (ref) => () => {
+  const onScroll = (ref) => () =>  {
     if (!ref)
       window.scroll({
         top: 0,
