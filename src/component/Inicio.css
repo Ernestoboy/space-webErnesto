@@ -10,6 +10,9 @@ background: linear-gradient(132deg, rgb(2, 28, 75) 0.00%, rgb(36, 83, 235) 94.78
 
 }
 
+
+
+
 .crema {
 	position: absolute;
 width: 42.3vw;
@@ -94,18 +97,23 @@ box-shadow: 1px 0px 4px 2px rgb(244,118,19,0.3);
   display: flex;
   justify-content: center;
   align-items:center;
-  animation: mover 130s infinite;
+  animation: spin 22s linear infinite;
   background:rgb(255,255,255,0.0); 
   z-index: 100;
   }
   
   
-  @keyframes mover {
+  @keyframes spin {
+  
   
     0% {transform: rotate(0deg);}
-    100% {transform: rotate(1320deg);}
+    100% {transform: rotate(360deg);}
    
   }
+    
+   
+   
+  
   
   
 .tecnologias1 , .tecnologias2 , .tecnologias3  , .tecnologias4 , .tecnologias5 , .tecnologias6 , .tecnologias7 , .tecnologias8 {
@@ -114,40 +122,48 @@ box-shadow: 1px 0px 4px 2px rgb(244,118,19,0.3);
   height: 14vh;
   background:green;
   border-radius: 50%;
-  animation: arreves 130s infinite;
+  animation: reverseturn 22s linear infinite;
   box-shadow: 1px 1px 6px 2px rgb(0,0,0,0.2);
   border:0.5vh solid white;
   
   }
   
-   
-@keyframes arreves {
-
-  0% {transform: rotate(0deg);}
-  100% {transform: rotate(-1320deg);}
+  
  
-}
+  
+  
+  @keyframes reverseturn {
+  
+   
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-360deg);}
+   
+  }
+   
+   
+  
   
    .tecnologias1 {
   top:55vh;
   right:0%;
   
-  background:url("../gallery/tec-html.png"); 
+  background:url("../gallery/tec-react.png"); 
   background-size: cover;
   }
   
    .tecnologias2  {
   top:55vh;
   left:0%;
-  background:url("../gallery/tec-css.png"); 
+  background:url("../gallery/img-reactRedux.svg"); 
   background-size: cover;
   }
   
+
   
    .tecnologias3 {
    top: 0%;
   right:55vh;
-  background:url("../gallery/tec-js.png"); 
+  background:url("../gallery/img-reactRouter.svg"); 
   background-size: cover;
   }
   
@@ -155,22 +171,35 @@ box-shadow: 1px 0px 4px 2px rgb(244,118,19,0.3);
    .tecnologias4  {
   bottom: 0%;
   right:55vh;
-  background:url("../gallery/tec-bootstrap1.png"); 
+  background:url("../gallery/img-reactTesting.svg"); 
   background-size: cover;
   }
   
-  
+
+  .tecnologias4:before    {
+    content:"react-testing";
+    position: absolute;
+    text-align: center;
+    width: 120%;
+    bottom: -20%;
+    color:white;
+    background: rgb(36, 83, 235);
+    border-radius: 20px;
+    
+        }
+    
+
    .tecnologias5 {
   top:0vh;
   right:0%;
-  background:url("../gallery/tec-sass1.png"); 
+  background:url("../gallery/jest.png");
   background-size: cover;
   }
   
    .tecnologias6  {
   top:0vh;
   left:0vh;
-  background:url("../gallery/tec-firebase1.png"); 
+  background:url("../gallery/tec-sass1.png"); 
   background-size: cover;
   }
   
@@ -178,7 +207,7 @@ box-shadow: 1px 0px 4px 2px rgb(244,118,19,0.3);
    .tecnologias7 {
   bottom: 0vh;
   left:0vh;
-  background:url("../gallery/tec-react.png"); 
+  background:url("../gallery/tailwind.png"); 
   background-size: cover;
   }
   
@@ -186,7 +215,7 @@ box-shadow: 1px 0px 4px 2px rgb(244,118,19,0.3);
    .tecnologias8  {
   bottom: 0vh;
   right:0vh;
-  background:url("../gallery/tec-angular.png"); 
+  background:url("../gallery/Github.jpg"); 
   background-size: cover;
   }
   
@@ -360,7 +389,7 @@ font-family: 'Dancing Script' , cursive;
     box-shadow: 0px 0px 1px 5px rgb(29,146,226,0.6);
     border-radius: 50%;
     color:rgb(29,146,226,1);
-    z-index: 1000;
+    z-index: 10;
   
   }
   

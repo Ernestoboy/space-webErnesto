@@ -1,16 +1,15 @@
 import React from "react";
 import "./Diseños1.css";
 import react from "../gallery/tec-react.png";
-import redux from "../gallery/redux.png";
+import redux from "../gallery/Redux.jpg";
 import router from "../gallery/router.jpg";
 import jest from "../gallery/jest.png";
 
 import tailwind from "../gallery/tailwind.png";
 import sass from "../gallery/sass.jpg";
-import node from "../gallery/node.jpg";
 import git from "../gallery/git.jpg";
-import gitlab from "../gallery/Gitlab.png" ;
-
+import github from "../gallery/Github.jpg" ;
+import reactTest from "../gallery/react-testing-library.png" ;
 
 function Diseños1(props) {
   return (
@@ -53,11 +52,10 @@ function Diseños1(props) {
   <p>HTML , CSS , javascript ,ecmascript6<hr/> </p>
   <p>React - redux - router - react test library - Jest<hr/> </p>
   <p>Tailwind - styled Components - SASS<hr/> </p> 
-  <p  className="resaltado">Node.js - Express<hr/> </p>
   <p className="resaltado">Control de versiones: Git - Github<hr/> </p>
 
-  <div className="logo-tecnologias"><img src={react} /><img src={redux} /><img src={router} /><img src={jest} /><img src={jest} />
-  <img src={tailwind} /><img src={sass} /><img src={node} /><img src={git} /><img src={gitlab} /></div>
+  <div className="logo-tecnologias"><img src={react} /><img src={redux} /><img src={router} /><img src={reactTest} /><img src={jest} />
+  <img src={tailwind} /><img src={sass} /><img src={git} /><img src={github} /></div>
 </div> 
 
 </div>

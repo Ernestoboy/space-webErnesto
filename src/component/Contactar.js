@@ -9,12 +9,15 @@ const Contactar = (props) => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [fondo, setFondo] = useState();
-  const [loader, setLoader] = useState(false);
+  
+
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setLoader(true);
-
+   
+    
+    
     db.collection("contacts")
       .add({
       
@@ -22,19 +25,20 @@ const Contactar = (props) => {
         message: message,
       })
       .then(() => {
-        setLoader(false);
+         
 Swal.fire({
   title:"Formulario enviado", 
   text:"Pronto me pondre en contacto contigo",
   icon:"success",
   showConfirmButton: false ,
-  timer:"5000",
+  timer:"4000",
   })        
  
       })
       .catch((error) => {
         alert(error.message);
-        setLoader(false);
+        
+        
       });
 
   
@@ -42,6 +46,7 @@ Swal.fire({
     setMessage("");
   };
 
+ 
 
   const ColorBackground = {
     position:"absolute",
