@@ -45,7 +45,7 @@ function Diseños1(props) {
           </div>
 
 
-          <div className="alto" ref={props.enlaceskills}  >
+          <div className="skills" ref={props.enlaceskills}  >
 
 <div className="conocimientos">
   <h3>SKILLS</h3>
