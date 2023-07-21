@@ -99,7 +99,7 @@ function App() {
 <div className="contenedor-redes">
 <div className="nombre">Ernesto Ulloa</div>
 <div className="redes">
-<a className="descargar-cv" href="./CV_I.pdf" download>Descargar CV</a>
+<a className="descargar-cv" href="./CV.pdf" download>Descargar CV</a>
 <a href="https://github.com/Ernestoboy" target="_blank"><i className="fab fa-github"><p>github</p></i></a>
 <a href="https://www.linkedin.com/in/ernesto-ulloa-0b61631ba/" target="_blank"><i className="fab fa-linkedin"></i></a>
 
