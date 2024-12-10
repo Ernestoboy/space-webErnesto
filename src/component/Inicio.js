@@ -37,9 +37,10 @@ function Inicio() {
 
 <div class="contenedor-bienvenido">
 	<p class="bienvenido">Bienvenido</p>
- Un placer poder tenerte por aqui , Mi nombre es Ernesto Ulloa
-              ,estoy involucrado en el desarrollo de paginas web esto claro con
-              buenas tecnologias (frameworks , lenguajes de programacion , etc )
+  Mi nombre es Edgar Gutierrez
+   y me especializo en el desarrollo de páginas web utilizando
+   las mejores tecnologías disponibles, como frameworks, lenguajes
+   de programación y otras herramientas modernas.
               .
 </div>
 
@@ -119,3 +120,51 @@ function Inicio() {
 }
 
 export default Inicio;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

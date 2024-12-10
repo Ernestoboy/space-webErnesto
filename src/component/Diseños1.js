@@ -1,15 +1,17 @@
 import React from "react";
 import "./Diseños1.css";
-import react from "../gallery/tec-react.png";
-import redux from "../gallery/Redux.jpg";
-import router from "../gallery/router.jpg";
-import jest from "../gallery/jest.png";
 
-import tailwind from "../gallery/tailwind.png";
-import sass from "../gallery/sass.jpg";
-import git from "../gallery/git.jpg";
-import github from "../gallery/Github.jpg" ;
-import reactTest from "../gallery/react-testing-library.png" ;
+import css from "../gallery/skill-icons--css.svg";
+import tailwind from "../gallery/skill-icons--tailwindcss-light.svg";
+import javascript from "../gallery/skill-icons--javascript.svg";
+import  react from "../gallery/skill-icons--react-light.svg";
+import redux from "../gallery/skill-icons--redux.svg";
+import firebase from "../gallery/devicon--firebase.svg";
+import node from "../gallery/skill-icons--nodejs-dark.svg";
+import express from "../gallery/skill-icons--expressjs-light.svg";
+import mongodb from "../gallery/skill-icons--mongodb.svg";
+import jest from "../gallery/skill-icons--jest.svg";
+
 
 function Diseños1(props) {
   return (
@@ -54,8 +56,58 @@ function Diseños1(props) {
   <p>Tailwind - styled Components - SASS<hr/> </p> 
   <p className="resaltado">Control de versiones: Git - Github<hr/> </p>
 
-  <div className="logo-tecnologias"><img src={react} /><img src={redux} /><img src={router} /><img src={reactTest} /><img src={jest} />
-  <img src={tailwind} /><img src={sass} /><img src={git} /><img src={github} /></div>
+  <div className="logo-tecnologias">
+
+
+
+{/* React */}
+<div className="icon-container">
+      <img src={css} className="icon" />
+      </div>
+
+
+      <div className="icon-container">
+      <img src={tailwind} className="icon" />
+      </div>
+
+      <div className="icon-container">
+      <img src={javascript} className="icon" />
+      </div>
+
+      <div className="icon-container">
+      <img src={react} className="icon" />
+      </div>
+
+      <div className="icon-container">
+      <img src={redux} className="icon" />
+      </div>
+
+      <div className="icon-container">
+      <img src={jest} className="icon" />
+      </div>
+
+      <div className="icon-container">
+      <img src={node} className="icon" />
+      </div>
+
+      <div className="icon-container">
+      <img src={express} className="icon" />
+      </div>
+
+      <div className="icon-container">
+      <img src={mongodb} className="icon" />
+      </div>
+
+      <div className="icon-container">
+      <img src={firebase} className="icon" />
+      </div>
+     
+
+
+
+     
+
+  </div>
 </div> 
 
 </div>

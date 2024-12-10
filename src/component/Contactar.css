@@ -12,7 +12,7 @@ display: flex;
 position :relative;
 width:95vw;
 height:80vh;
-box-shadow: 1px 1px 20px 10px rgb(74,158,255,0.3);
+box-shadow: 1px 1px 20px 10px rgb(74,158,255,0.1);
 display: flex;
 overflow: hidden;
 }

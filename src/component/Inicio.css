@@ -118,8 +118,8 @@ box-shadow: 1px 0px 4px 2px rgb(244,118,19,0.3);
   
 .tecnologias1 , .tecnologias2 , .tecnologias3  , .tecnologias4 , .tecnologias5 , .tecnologias6 , .tecnologias7 , .tecnologias8 {
   position:absolute;
-  width: 14vh ;
-  height: 14vh;
+  width: 13vh ;
+  height: 13vh;
   background:green;
   border-radius: 50%;
   animation: reverseturn 22s linear infinite;
@@ -223,17 +223,22 @@ box-shadow: 1px 0px 4px 2px rgb(244,118,19,0.3);
 
   .nave-espacial  {
     position: absolute;
-    top:50vh;
-    right: 0%;
+    top:70vh;
+    right: -4%;
     width: 13vw;
     height: 13vw;
-    border:1vh solid rgb(240,240,240); 
+    border:0.5vh solid rgb(240,240,240,1); 
+    
     display: flex;
     justify-content: center;
     align-items:center;
     border-radius: 50%;
      background:-webkit-linear-gradient(40deg,tomato,orange);
-     box-shadow: 0px 0px 6px 3px rgb(255,255,255,0.2);
+     
+     
+
+     box-shadow: 0px 0px 30px 10px rgb(255,255,255,0.2);
+     
      
     }
     
@@ -242,24 +247,38 @@ box-shadow: 1px 0px 4px 2px rgb(244,118,19,0.3);
     .nave-espacial:before {
       content:"";
     position: absolute;
-    width: 15vw;
-    height:20.33vw;
+    width: 9vw;
+    height:12.15vw;
 
     background:url("../gallery/nave1.png"); 
     background-size: cover;
     z-index: 10000000000;
+    animation: flotacion 4s ease-in-out infinite;
+
     
     
     }
-    
+
+    @keyframes flotacion {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-40px); /* Flota hacia arriba */
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }  
 
     
 .contenedor-bienvenido {
   position: relative;
   width: 30vw;
-  height: 30vh;
+  height: 27vh;
   padding: 0.5vw;
-  border:0.5vw solid rgb(240,240,240); 
+  border:0.5vw solid rgb(200,200,200,0.5);
+  
   background:white;
   left:5vw;
   top:80vh;
@@ -269,7 +288,7 @@ box-shadow: 1px 0px 4px 2px rgb(244,118,19,0.3);
   align-items: center;
   flex-wrap: wrap;
   font-family: Segoe UI Symbol;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     color:rgb(68,74,125);
     box-shadow: 0px 0px 6px 3px rgb(255,255,255,0.3);
     margin: 1.5vh 0vh 1.5vh 0vh;
@@ -282,16 +301,15 @@ box-shadow: 1px 0px 4px 2px rgb(244,118,19,0.3);
   .bienvenido {
     position:relative;
   font-family: Segoe UI Symbol;
-    font-size: 2.3vw;
+    font-size: 2.2vw;
    background:grey;
    width: 100%;
    margin:0vh 0vh 0vh 0vh; 
-  background:-webkit-linear-gradient(40deg,tomato,orange);
-  
-  border-bottom: 1vh solid rgb(240,240,240,1);
+   background:rgb(46, 113, 210, 1)  ;
   z-index: 10000;
   font-family: 'Dancing Script' , cursive;  
   color:white;
+  
   }
   
   
@@ -303,6 +321,7 @@ box-shadow: 1px 0px 4px 2px rgb(244,118,19,0.3);
   bottom:-1vh;
   background:linear-gradient(40deg,  rgb(29,146,226,1),rgb(62,80,193,1));
   border-radius: 20vw;
+  
   }
 
   
@@ -312,7 +331,7 @@ box-shadow: 1px 0px 4px 2px rgb(244,118,19,0.3);
   height: 62vh;
   left:19%;
  z-index: 1000;
-  
+ 
   }
 
 
@@ -335,7 +354,9 @@ box-shadow: 1px 0px 4px 2px rgb(244,118,19,0.3);
   position: relative;
   width: 90%;
   margin: 0vw 0vw 0vw 0vw;
+  
 }
+
 
 
 .titulo {
@@ -380,7 +401,7 @@ font-family: 'Dancing Script' , cursive;
   width: 34vw;
   height: 18vh;
   right:4vw;
-  bottom:4vh ;
+  bottom:3vh ;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -395,13 +416,13 @@ font-family: 'Dancing Script' , cursive;
   
   .categorias-seccion-inicio i {
   position: relative;
-  width:6vw;
+  width:5.5vw;
   height: max-content;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  font-size: 3.5vw;
+  font-size: 3vw;
   color:white;
   background:linear-gradient(-40deg,rgb(62,80,193,1) , rgb(29,146,226,1));
   padding: 1vw 0.5vw 1vh 0.5vw;
@@ -413,13 +434,17 @@ font-family: 'Dancing Script' , cursive;
   
   
   .categorias-seccion-inicio i p {
-  font-size: 1.2vw;
+  font-size: 1.15vw;
   margin:1vh 0vh 0vh 0vh; 
   font-family: Segoe UI Symbol;
     background:orange;
   width: 100%;
   padding: 1vh;
   border-radius: 1vw;
+  background:-webkit-linear-gradient(40deg,tomato,orange);
+  background: rgb(255, 132, 36)
+
+  ;
   
   
   }
@@ -499,6 +524,7 @@ font-family: 'Dancing Script' , cursive;
     .bienvenido {
  
       font-size: 3vh;
+      
   
     }
   
