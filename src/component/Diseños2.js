@@ -35,7 +35,7 @@ de alguno de tus productos .
 <i class="fas fa-award"></i>
 FORMACION . eres un experto en tu area y te gustaria implementar
      una ruta de aprendizaje , esta pagina es para ti  , para aquellas personas que buscan un buen
-     aprendizaje .
+     aprendizaje.
 
 </div>
 
