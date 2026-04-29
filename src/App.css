@@ -1,5 +1,4 @@
 
-
 body {
   margin: 0;
   padding: 0;
@@ -7,492 +6,620 @@ body {
 
 .App {
   position: relative;
- width: 100%;
- height:400vh; 
- display:flex;
- justify-content:center;
- flex-wrap: wrap;
- 
-  
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-
-
+/* ===== FONDO CIRCULAR (decorativo) ===== */
 .fondo-circular {
   position: fixed;
-  width: 35vw;
-  height: 75vh;
-  top:12.5vh;
-  right:12.5%;
-  padding-left:5vw; 
-  background:rgb(255,255,255,0.2);
+  width: 32vw;
+  height: 32vw;
+  top: 50%;
+  right: 8%;
+  transform: translateY(-50%);
+  background: radial-gradient(circle, rgba(29, 146, 226, 0.08) 0%, transparent 70%);
   border-radius: 50%;
-  box-shadow: 3px 3px 140px 50px rgb(255,255,255,0.2);
+  border: 1px solid var(--glass-border);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.fondo-circular:before {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  top: 20%;
+  left: 20%;
+  background: radial-gradient(circle, rgba(124, 77, 255, 0.06) 0%, transparent 70%);
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+
+/* ===== BARRA SUPERIOR (redes) ===== */
+.contenedor-redes {
+  position: fixed;
+  width: auto;
+  height: auto;
+  right: 2%;
+  top: 2vh;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+
+.nombre {
+  position: relative;
+  color: var(--text-primary);
+  font-size: 1.4vw;
+  font-family: var(--font-accent);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 1.5vw;
+}
+
+.nombre:before {
+  content: "";
+  position: relative;
+  width: 4vw;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--space-accent));
+  display: inline-block;
+}
+
+.redes {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.6vw;
+  padding: 0.6vh 1.2vw;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.redes:before {
+  display: none;
+}
+
+.descargar-cv {
+  position: relative;
+  width: max-content;
+  padding: 0.7vh 1vw;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  font-family: var(--font-body);
+  font-size: 0.85vw;
+  font-weight: 500;
+  color: var(--space-deep);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.descargar-cv:hover {
+  background: white;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(29, 146, 226, 0.3);
+}
+
+.redes a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.redes a i {
+  position: relative;
+  font-size: 1.1vw;
+  display: flex;
+  align-items: center;
+  gap: 0.3vw;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.6vh 0.6vw;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.redes a i:hover {
+  background: rgba(255, 255, 255, 0.18);
+  transform: translateY(-1px);
+}
+
+.redes a i p {
+  position: relative;
+  font-family: var(--font-body);
+  font-size: 0.8vw;
+  font-weight: 400;
+  color: white;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.redes a .fa-linkedin {
+  background: linear-gradient(135deg, #0077b5, #00a0dc);
+  border: none;
+}
+
+.redes a .fa-linkedin:hover {
+  background: linear-gradient(135deg, #00a0dc, #0077b5);
+}
+
+
+/* ===== NAVEGACIÓN DESKTOP ===== */
+.Contenedor-navegacion {
+  position: fixed;
+  width: 9vw;
+  height: 100%;
+  right: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.Contenedor-navegacion nav {
+  position: absolute;
+  width: 20vw;
+  height: 20vw;
+  left: 0.5vw;
+  border-radius: 50%;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  border-right:1vh solid rgb(255,255,255,0.1);  
-  z-index: 10;
-
-  
-  }
-  
-  
-  
-  
-  .fondo-circular:before {
-    content: "";
-  position: absolute;
-  width: 28vw;
-  height: 28vw;
-  background:rgb(255,255,255,0.1); 
-  box-shadow: 3px 3px 140px 50px rgb(255,255,255,0.2);
-  border-radius: 50%;
-  border-bottom:1vh solid rgb(255,255,255,0.1);   
-  }
-  
-  
-  
-.contenedor-redes {
-  position:fixed;
-  width:51vw;
-  height:9vh;
-  right:1.1%;
-  top:1.7vh; 
-  z-index:2000;
-  }
-
-  
-.nombre {
-  position: absolute;
-  width:12vw;
-height: 7.5vh;
-display: flex;
-justify-content: center;
-align-items: center;
-left:0%;
-color:white;
-font-size:2vw; 
-font-family: 'Dancing Script' , cursive;
+  background: rgba(5, 5, 32, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  box-shadow:
+    0 0 40px rgba(29, 146, 226, 0.1),
+    inset 0 0 30px rgba(0, 0, 0, 0.3);
 }
 
-.nombre:before {
-content: "";
-position: absolute;
-width:14vw;
-height: 0.3vh ;
-background:rgb(240,240,240);
-border-radius: 20vw; 
-left:100%;
-
-}
-
-
-
-.redes {
-  position: absolute;
-  padding-right:1vw;
-  padding-left:1vw;
-  right: 0%;
-  width: 21vw;
-  height: 7.5vh;
-  background:black;
-  background:white; 
-  z-index: 1000000000000;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  border: 0.7vh solid rgb(240,240,240);
-  border-radius: 50vw;
-  background:linear-gradient(-40deg,rgb(62,80,193,1) , rgb(29,146,226,1));
-  box-shadow: 2px 2px 5px 2px rgb(0,0,0,0.2);
-  box-shadow: 3px 3px 140px 50px rgb(255,255,255,0.2);
-  box-shadow: 3px 3px 8px 4px rgb(255,255,255,0.2);
-   background:white; 
-  }
- 
-  .redes:before {
-  content: "";
-  width: 95%;
-  position: absolute;
-  height: 80%;
-  box-shadow: 0px 0px 0px 0.3vh rgb(49,105,206,1);
-  border-radius: 50vw;
-  
-  }
-
- 
-.descargar-cv {
-  position: relative;
-width: max-content;
-padding: 1vh 0.5vw 1vh 0.5vw ;
-border-radius:1vw;
-background:white;
-box-shadow: 0px 0px 6px 2px rgb(0,0,0,0.1); 
-font-family: Segoe UI Symbol;
-font-size: 1.1vw;
-color:black;
-
-}
-
-.redes {
-  cursor: pointer;
-}
-
-.redes a {
-text-decoration:none;
-cursor: pointer;
-}
-
-.redes a i {
-  position: relative;
-font-size: 1.5vw;
-display: flex;
-align-items: center;
-color:white;
-background:rgb(50,50,50);
-box-shadow: 1px 1px 6px 2px rgb(0,0,0,0.2);
-padding: 1vh 0.5vw 1vh 0.5vw ;
-border-radius: 1vw;
-cursor: pointer;
-
-}
-
-
-
-
-.redes a i p {
-  position: relative;
-
-font-family: Segoe UI Symbol;
-font-size: 1.1vw;
-color:white;
-padding: 0vh 0vw 0vh 0.3vw ;
-margin:0vh 0vh 0vh 0vh; 
-cursor: pointer;
-
-
-}
-
-.redes a .fa-linkedin {
-  background:linear-gradient(120deg,#396afc,#2948ff); 
-  box-shadow: 1px 1px 5px 2px rgb(36, 83, 235,0.3);
-  cursor: pointer;
-  }
-
-
-
-
-
-
-
-
-.Contenedor-navegacion {
-  position: fixed;
-  width: 11.5vw;
-  height: 100%;
-  
- 
-  overflow: hidden;
-  right:0% ;
-  display: flex;
-justify-content: center;
-align-items: center;
-z-index: 100;
-
-}
-  
-
-.Contenedor-navegacion nav {
-  position: absolute;
-  width: 25vw;
-  height: 25vw;
-  left:1vw;
- border-radius: 50%;
-  background:rgb(60,60,60);
-   background: linear-gradient(to right,  rgb(57,106,252,0.8),rgb(57,106,252,0.8)); 
-overflow: hidden;
-
-display: flex;
-justify-content: center;
-align-items: center;
-flex-wrap: wrap;
-box-shadow: 3px 3px 8px 4px rgb(255,255,255,0.8);
-z-index: 100;
-background-size: cover;
-background:linear-gradient(120deg,rgb(62,80,193,1) , rgb(29,146,226,1));
-
-
-background-size: cover;
-
-
-
-}
-
-
-
+/* Centro naranja — más pequeño, con anillo orbital */
 .Contenedor-navegacion nav:before {
   content: "";
-position: absolute;
-width: 10vw;
-height: 10vw;
-border-radius: 50%;
-box-shadow: -1px 0px 0px 2px rgb(255,255,255,1);
-background:rgb(62,80,193,0.6) ;
-
-z-index: 10000;
-background:rgb(247,119,35,1) ;
-
-
+  position: absolute;
+  width: 7vw;
+  height: 7vw;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(135deg, var(--space-orange), #ff6d00);
+  z-index: 10000;
+  box-shadow:
+    0 0 20px rgba(247, 119, 35, 0.4),
+    0 0 60px rgba(247, 119, 35, 0.15);
 }
 
-.tab1 , .tab2 , .tab3 , .tab4{
+/* Anillo orbital decorativo alrededor del centro */
+.Contenedor-navegacion nav:after {
+  content: "";
+  position: absolute;
+  width: 11vw;
+  height: 11vw;
+  border-radius: 50%;
+  border: 1px dashed rgba(255, 255, 255, 0.12);
+  z-index: 10001;
+  animation: orbit-glow 8s linear infinite;
+  box-shadow: 0 0 8px rgba(0, 229, 255, 0.05);
+}
+
+@keyframes orbit-glow {
+  0%   { border-color: rgba(255, 255, 255, 0.12); box-shadow: 0 0 8px rgba(0, 229, 255, 0.05); }
+  50%  { border-color: rgba(0, 229, 255, 0.2); box-shadow: 0 0 12px rgba(0, 229, 255, 0.1); }
+  100% { border-color: rgba(255, 255, 255, 0.12); box-shadow: 0 0 8px rgba(0, 229, 255, 0.05); }
+}
+
+.tab1, .tab2, .tab3, .tab4 {
   position: relative;
-  width: 25vw;
+  width: 20vw;
   height: 25%;
-  background:linear-gradient(-40deg,rgb(62,80,193,1) , rgb(29,146,226,1));
-  margin: 0vw 0vw 0vw 0vw;
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  left:-18%;
-  font-family: Segoe UI Symbol;
-  font-size: 1.3vw;
-  color:white;
-  box-shadow: 0px 0px 0px 3px rgb(247,159,35,0.5);
- 
-
-
-  background: #FF512F;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #F09819, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #F09819, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
-
-
-  }
-  
-  
-   .tab2 , .tab3  {
-   left:-30%;
-    }
-  
-  .tab1:hover , .tab2:hover , .tab3:hover , .tab4:hover {
-  font-size:1.5vw;  
+  left: -22%;
+  font-family: var(--font-body);
+  font-size: 0.9vw;
+  font-weight: 500;
+  color: white;
+  letter-spacing: 0.5px;
+  background: linear-gradient(135deg, rgba(247, 119, 35, 0.75), rgba(255, 87, 34, 0.75));
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+  transition: all 0.3s ease;
   cursor: pointer;
-  
-  
-  }
-  
-  .Contenedor-navegacion-movil {
-display: none;
-  }
-
-  
-@media only screen and (min-width: 280px) and (max-width: 840px) {
-
-  
-  .fondo-circular {
-    display: none;  
-    }
-    
-  
-  
-  
-  
-  
-.contenedor-redes {
-  position:fixed;
-  width:max-content;
-  height:max-content;
-  left:0%;
-  top:0vh; 
-  z-index:100000000000000000;
- 
-  }
-
-  
-.nombre {
-
-display: none;
 }
 
-.nombre:before {
-content: "";
-position: absolute;
-width:14vw;
-height: 0.3vh ;
-background:rgb(240,240,240);
-border-radius: 20vw; 
-left:100%;
-
+.tab2, .tab3 {
+  left: -32%;
 }
 
-
-
-.redes {
-  position: absolute;
-  padding-right:2vw;
-  padding-left:4vw;
-  left:0%;
-  width: 75vw;
-  height: 6vh;
-  background:black;
-  background:rgb(0,0,0,0.0); 
-  z-index: 1000000000000;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  
-  border-radius: 0vw;
-  border: 1.2vh solid rgb(240,240,240);
-  border-left: 0.7vh solid rgb(240,240,240);
-  border-bottom-right-radius: 5vw;
-  background:linear-gradient(-40deg,rgb(62,80,193,1) , rgb(29,146,226,1));
-  box-shadow: 2px 2px 5px 2px rgb(0,0,0,0.2);
-  box-shadow: 3px 3px 140px 50px rgb(255,255,255,0.2);
-  box-shadow: 3px 3px 8px 4px rgb(255,255,255,0.2);
-   background:white; 
-   box-shadow: 3px 3px 8px 3px rgb(255,255,255,0.2);
-   
-  }
-  
-  .redes:before {
-  content: "";
-  width: 95%;
-  position: absolute;
-  height: 80%;
-  box-shadow: 0px 0px 0px 0.4vh rgb(49,105,206,1);
-  border-radius: 50vw;
-  
-  }
-
-  
-.descargar-cv {
-  position: relative;
-width: max-content;
-padding: 1vh 2vw 1vh 2vw ;
-border-radius:2vh;
-background:white;
-box-shadow: 0px 0px 6px 2px rgb(0,0,0,0.2); 
-font-family: Segoe UI Symbol;
-font-size: 2vh;
-
-
-
+.tab1:hover, .tab2:hover, .tab3:hover, .tab4:hover {
+  font-size: 1.05vw;
+  background: linear-gradient(135deg, rgba(255, 152, 0, 0.9), rgba(255, 87, 34, 0.9));
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
 }
-
-
-.redes a i {
-  position: relative;
-font-size: 3.4vh;
-display: flex;
-align-items: center;
-color:white;
-background:rgb(50,50,50);
-box-shadow: 1px 1px 6px 2px rgb(0,0,0,0.2);
-padding: 1vh 1vh 1vh 1vh ;
-border-radius: 1vh;
-}
-
-
-.redes a i p {
-  position: relative;
-
-font-family: Segoe UI Symbol;
-font-size: 2.3vh;
-color:white;
-padding: 0vh 0vw 0vh 1vh ;
-margin:0vh 0vh 0vh 0vh; 
-
-
-}
-
-.redes .fa-instagram {
-background:linear-gradient(120deg,fuchsia,crimson); 
-box-shadow: 1px 1px 5px 2px rgb(255,0,255,0.4);
-z-index: 2000;
-}
-
-
-
-
-.Contenedor-navegacion {
-display: none;
-}
-  
 
 .Contenedor-navegacion-movil {
-
-
-    position:fixed;
-    top:0;
-    width: 11vw;
-    height: 8vh;
-    background: grey;
-      overflow: none;
-    right:0% ;
-    display: block;
-  z-index: 100000000000000;
-  
-  background: rgb(255,150,29);
-   border-top-left-radius:40% ;
-   border-bottom-left-radius:40% ;
-   box-shadow: -2px -2px 1px 7px  rgb(255,255,255,0.2);
-   
- 
- font-size:2vh ;
-
-
-
-
+  display: none;
 }
 
 
+/* ===== RESPONSIVE ===== */
+@media only screen and (max-width: 840px) {
 
-  
-
-
-
-
-.tab1-movil , .tab2-movil , .tab3-movil , .tab4-movil {
-
- 
-color:white;
-padding: 2.5vh 0vh 2.5vh 0vw;
-  
-  margin: 0%;
-  box-shadow: 0px 0px 0px 1px  rgb(56,104,252,1);
-  display: grid;
-  justify-content: center;
-  align-items: center;
+  .fondo-circular {
+    display: none;
   }
-  
-  
-  .Contenedor-navegacion-movil  i {
+
+  .contenedor-redes {
+    position: fixed;
+    width: max-content;
+    height: max-content;
+    left: 0%;
+    top: 0vh;
+    z-index: 100000000;
+  }
+
+  .nombre {
+    display: none;
+  }
+
+  .nombre:before {
+    display: none;
+  }
+
+  .redes {
     position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center ;
-    align-items: center;
-    font-size:4.5vw;
-    color:white;
-
+    padding: 1vh 3vw;
+    width: auto;
+    height: auto;
+    border-radius: 0;
+    border-bottom-right-radius: 20px;
+    background: rgba(10, 10, 62, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-left: none;
+    border-top: none;
+    gap: 2vw;
   }
 
-  @media screen and (min-width:500px) {
-   .redes{
-    width: 50vw;
-   }
-    
+  .redes:before {
+    display: none;
+  }
+
+  .descargar-cv {
+    padding: 1vh 2vw;
+    border-radius: 8px;
+    font-size: 1.8vh;
+  }
+
+  .redes a i {
+    font-size: 2.8vh;
+    padding: 0.8vh;
+    border-radius: 8px;
+  }
+
+  .redes a i p {
+    font-size: 1.8vh;
+    padding: 0 0 0 0.5vh;
+  }
+
+  .redes .fa-instagram {
+    background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+    box-shadow: 0 2px 10px rgba(131, 58, 180, 0.3);
+  }
+
+  .Contenedor-navegacion {
+    display: none;
+  }
+
+  .Contenedor-navegacion-movil {
+    position: fixed;
+    top: 0;
+    width: 11vw;
+    height: 7vh;
+    right: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100000000;
+    background: linear-gradient(135deg, var(--space-orange), #ff6d00);
+    border-bottom-left-radius: 16px;
+    box-shadow: -2px 2px 15px rgba(247, 119, 35, 0.3);
+    font-size: 2.2vh;
+    cursor: pointer;
+  }
+
+  .Contenedor-navegacion-movil > i {
+    color: white;
+    font-size: 2.5vh;
+  }
+
+  .tab1-movil, .tab2-movil, .tab3-movil, .tab4-movil {
+    color: white;
+    padding: 2vh 0;
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+    font-family: var(--font-body);
+    font-size: 1.6vh;
+    font-weight: 400;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background 0.3s ease;
+  }
+
+  .tab1-movil:hover, .tab2-movil:hover, .tab3-movil:hover, .tab4-movil:hover {
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  .Contenedor-navegacion-movil i {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vh;
+    color: white;
+  }
+
+  @media screen and (min-width: 500px) {
+    .redes {
+      width: auto;
     }
-  } 
+  }
+}
 
 
+/* ============================================
+   FONDO ESPACIAL — ESTRELLAS, PLANETAS, NEBULA
+   ============================================ */
+
+/* --- ESTRELLAS CAPA 1: diminutas, muchas, parpadeo lento --- */
+.stars-layer-1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  pointer-events: none;
+  z-index: 2;
+  background: transparent;
+  box-shadow:
+    12vw 8vh 0 1px rgba(255,255,255,0.6),
+    25vw 15vh 0 1px rgba(255,255,255,0.5),
+    45vw 5vh 0 1px rgba(255,255,255,0.7),
+    67vw 12vh 0 1px rgba(255,255,255,0.4),
+    82vw 3vh 0 1px rgba(255,255,255,0.6),
+    93vw 18vh 0 1px rgba(255,255,255,0.5),
+    8vw 28vh 0 1px rgba(255,255,255,0.45),
+    22vw 35vh 0 1px rgba(255,255,255,0.6),
+    38vw 22vh 0 1px rgba(255,255,255,0.5),
+    55vw 30vh 0 1px rgba(255,255,255,0.65),
+    72vw 25vh 0 1px rgba(255,255,255,0.4),
+    88vw 33vh 0 1px rgba(255,255,255,0.55),
+    5vw 45vh 0 1px rgba(255,255,255,0.5),
+    18vw 52vh 0 1px rgba(255,255,255,0.45),
+    33vw 48vh 0 1px rgba(255,255,255,0.6),
+    50vw 42vh 0 1px rgba(255,255,255,0.4),
+    65vw 55vh 0 1px rgba(255,255,255,0.55),
+    78vw 47vh 0 1px rgba(255,255,255,0.45),
+    95vw 50vh 0 1px rgba(255,255,255,0.6),
+    10vw 65vh 0 1px rgba(255,255,255,0.5),
+    28vw 72vh 0 1px rgba(255,255,255,0.6),
+    42vw 60vh 0 1px rgba(255,255,255,0.45),
+    58vw 68vh 0 1px rgba(255,255,255,0.55),
+    75vw 62vh 0 1px rgba(255,255,255,0.4),
+    90vw 70vh 0 1px rgba(255,255,255,0.6),
+    15vw 82vh 0 1px rgba(255,255,255,0.55),
+    30vw 88vh 0 1px rgba(255,255,255,0.45),
+    48vw 78vh 0 1px rgba(255,255,255,0.6),
+    62vw 85vh 0 1px rgba(255,255,255,0.4),
+    80vw 90vh 0 1px rgba(255,255,255,0.55),
+    96vw 83vh 0 1px rgba(255,255,255,0.5),
+    3vw 95vh 0 1px rgba(255,255,255,0.6),
+    /* extras */
+    17vw 4vh 0 1px rgba(255,255,255,0.5),
+    37vw 14vh 0 1px rgba(255,255,255,0.4),
+    57vw 38vh 0 1px rgba(255,255,255,0.55),
+    77vw 58vh 0 1px rgba(255,255,255,0.45),
+    97vw 75vh 0 1px rgba(255,255,255,0.5),
+    2vw 20vh 0 1px rgba(255,255,255,0.6),
+    43vw 92vh 0 1px rgba(255,255,255,0.4);
+  animation: twinkle1 4s ease-in-out infinite alternate;
+}
+
+/* --- ESTRELLAS CAPA 2: medianas, parpadeo intermedio --- */
+.stars-layer-2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  pointer-events: none;
+  z-index: 2;
+  background: transparent;
+  box-shadow:
+    7vw 12vh 0 1.5px rgba(200,220,255,0.6),
+    20vw 40vh 0 1.5px rgba(200,220,255,0.7),
+    35vw 18vh 0 1.5px rgba(255,255,255,0.5),
+    52vw 65vh 0 1.5px rgba(200,210,255,0.6),
+    70vw 35vh 0 1.5px rgba(255,255,255,0.55),
+    85vw 58vh 0 1.5px rgba(220,220,255,0.65),
+    15vw 75vh 0 1.5px rgba(255,255,255,0.5),
+    40vw 85vh 0 1.5px rgba(200,220,255,0.6),
+    60vw 10vh 0 1.5px rgba(255,255,255,0.55),
+    92vw 45vh 0 1.5px rgba(210,220,255,0.65),
+    3vw 55vh 0 1.5px rgba(255,255,255,0.5),
+    47vw 28vh 0 1.5px rgba(220,230,255,0.55),
+    78vw 80vh 0 1.5px rgba(255,255,255,0.6),
+    27vw 92vh 0 1.5px rgba(200,210,255,0.55),
+    63vw 48vh 0 1.5px rgba(255,255,255,0.65);
+  animation: twinkle2 6s ease-in-out infinite alternate;
+}
+
+/* --- ESTRELLAS CAPA 3: brillantes, pocas, parpadeo notable --- */
+.stars-layer-3 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  pointer-events: none;
+  z-index: 2;
+  background: transparent;
+  box-shadow:
+    18vw 20vh 0 2px rgba(255,255,255,0.9),
+    55vw 15vh 0 2px rgba(200,230,255,1),
+    80vw 42vh 0 2px rgba(255,255,255,0.85),
+    30vw 60vh 0 2px rgba(180,220,255,0.9),
+    68vw 78vh 0 2px rgba(255,255,255,0.95),
+    12vw 88vh 0 2px rgba(200,210,255,0.8),
+    90vw 22vh 0 2px rgba(255,255,255,0.9),
+    42vw 50vh 0 2px rgba(180,200,255,1);
+  animation: twinkle3 3s ease-in-out infinite alternate;
+}
+
+/* --- ANIMACIONES DE PARPADEO --- */
+@keyframes twinkle1 {
+  0%   { opacity: 0.6; }
+  50%  { opacity: 1; }
+  100% { opacity: 0.5; }
+}
+
+@keyframes twinkle2 {
+  0%   { opacity: 0.4; }
+  30%  { opacity: 0.9; }
+  70%  { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+@keyframes twinkle3 {
+  0%   { opacity: 0.5; }
+  25%  { opacity: 1; }
+  50%  { opacity: 0.3; }
+  75%  { opacity: 0.9; }
+  100% { opacity: 0.6; }
+}
+
+
+/* --- NEBULOSA: resplandor sutil de color --- */
+.nebula-glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  background:
+    radial-gradient(ellipse 50% 40% at 15% 30%, rgba(124, 77, 255, 0.12) 0%, transparent 70%),
+    radial-gradient(ellipse 45% 50% at 80% 65%, rgba(29, 146, 226, 0.15) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 35% at 50% 85%, rgba(247, 119, 35, 0.08) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 45% at 65% 10%, rgba(0, 229, 255, 0.08) 0%, transparent 70%),
+    radial-gradient(ellipse 30% 30% at 35% 55%, rgba(124, 77, 255, 0.06) 0%, transparent 60%);
+}
+
+
+/* --- SATURNO: planeta lejano con anillo --- */
+.planet-saturn {
+  position: fixed;
+  top: 18vh;
+  left: 8vw;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  z-index: 2;
+  background: radial-gradient(circle at 35% 35%,
+    #c9a96e 0%,
+    #a0825a 40%,
+    #7a6045 70%,
+    #5a4530 100%
+  );
+  box-shadow:
+    inset -8px -4px 12px rgba(0,0,0,0.5),
+    0 0 15px rgba(201, 169, 110, 0.15),
+    0 0 40px rgba(201, 169, 110, 0.05);
+  pointer-events: none;
+  opacity: 0.6;
+  animation: float-planet 20s ease-in-out infinite;
+}
+
+.saturn-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 20px;
+  border: 2px solid rgba(210, 180, 130, 0.35);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) rotateX(75deg) rotateZ(-15deg);
+  box-shadow:
+    0 0 0 1px rgba(180, 150, 100, 0.1),
+    0 0 8px rgba(210, 180, 130, 0.1);
+}
+
+/* --- PLANETA DISTANTE: pequeño, azulado --- */
+.distant-planet {
+  position: fixed;
+  bottom: 15vh;
+  right: 15vw;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 40% 30%,
+    #4a7ab5 0%,
+    #2a5a8a 50%,
+    #1a3a5a 100%
+  );
+  box-shadow:
+    inset -4px -2px 6px rgba(0,0,0,0.5),
+    0 0 10px rgba(74, 122, 181, 0.2),
+    0 0 25px rgba(74, 122, 181, 0.08);
+  pointer-events: none;
+  z-index: 2;
+  opacity: 0.5;
+  animation: float-planet 25s ease-in-out infinite reverse;
+}
+
+@keyframes float-planet {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+
+/* --- Esconder elementos espaciales en móvil chico para rendimiento --- */
+@media only screen and (max-width: 480px) {
+  .planet-saturn,
+  .distant-planet {
+    display: none;
+  }
   
-  
-  
-  
+  .stars-layer-2,
+  .stars-layer-3 {
+    animation: none;
+    opacity: 0.6;
+  }
+}

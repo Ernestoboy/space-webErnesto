@@ -1,532 +1,437 @@
+/* ===== SECCIÓN CONTACTAR ===== */
 .seccion-contactar {
-  position:relative;
-width:100vw;
-height:100vh;
-
-display: flex;
-    justify-content: center;
-    align-items: center;
-   z-index:10;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
 }
+
+
+/* ===== CONTENEDOR PRINCIPAL ===== */
 .contenedor-contactar {
-position :relative;
-width:95vw;
-height:80vh;
-box-shadow: 1px 1px 20px 10px rgb(74,158,255,0.1);
-display: flex;
-overflow: hidden;
+  position: relative;
+  width: 90vw;
+  height: 78vh;
+  display: flex;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 16px 60px rgba(0, 0, 0, 0.4);
 }
 
 
+/* ===== COLUMNA IZQUIERDA (método) ===== */
 .contenedor-1 {
-position :relative;
-width:30%;
-height:100%;
-background:linear-gradient(-40deg,rgb(62,80,193,1) ,rgb(37,129,217,1)  );
-display:flex;
-justify-content: center;
-align-items: center;
-
+  position: relative;
+  width: 30%;
+  height: 100%;
+  background: linear-gradient(160deg, rgba(29, 146, 226, 0.15), rgba(124, 77, 255, 0.1));
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid var(--glass-border);
 }
-
-
 
 .contenido-1-izquierdo {
-position: relative;
-
-width: 90%;
-height: 90%;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-wrap: wrap;
-
-border-bottom-right-radius: 22vw;
+  position: relative;
+  width: 88%;
+  height: 88%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
-
-
 
 .contenido-1-izquierdo p {
-position: relative;
-width: 90%;
-margin: 0vw 0vw 0vw 0vw;
-
+  position: relative;
+  width: 90%;
+  margin: 0;
 }
-
 
 .titulo-metodous {
-position:relative;
-font-size: 2.3vw;
-font-weight: 100;
-margin: 0vh 0vh 0vh 0vh;
-color: aqua;
-padding: 0vw 0vw 0vw 0vw;
-text-align: center;
-font-family: 'Dancing Script' , cursive;  
+  position: relative;
+  font-size: 2vw;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: var(--font-accent);
+  background: linear-gradient(135deg, var(--space-cyan), var(--space-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
-
 
 .comentario {
-font-family: Segoe UI Symbol;
-font-size: 1.1vw;
-color: white;
-margin: 1.5vh 0vh 1.5vh 0vh;
+  font-family: var(--font-body);
+  font-size: 0.95vw;
+  font-weight: 300;
+  color: var(--text-secondary);
+  margin: 1.5vh 0;
+  line-height: 1.6;
 }
-
 
 .ListaMetodoDeTrabajo {
-font-family: Segoe UI Symbol;
-font-size: 1.1vw;
-background: rgb(29, 146, 226, 0.4);
-color: white;
-border-left: 0.2vw solid rgb(29, 146, 226, 1);
-border-bottom: 0.2vw solid rgb(29, 146, 226, 1);
-padding: 1.5vh 0vh 1.5vh 1.5vh;
+  font-family: var(--font-body);
+  font-size: 0.9vw;
+  font-weight: 300;
+  background: rgba(29, 146, 226, 0.08);
+  color: var(--text-secondary);
+  border-left: 3px solid var(--space-accent);
+  border-bottom: 1px solid rgba(29, 146, 226, 0.15);
+  padding: 1.2vh 0 1.2vh 1vh;
+  border-radius: 0 8px 8px 0;
+  line-height: 1.5;
 }
 
+
+/* ===== COLUMNA CENTRAL (formulario) ===== */
 .contenedor-2 {
-position :relative;
-width:35%;
-height:100%;
-display: flex;
-justify-content: center;
-align-items: center;
-background: rgb(0,0,0,0.1);
-
+  position: relative;
+  width: 35%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.2);
 }
-
-
 
 .contenedor-form {
-position: absolute;
-width:max-content;
-height:max-content;
-background-size: cover;
-box-shadow: 0px 6px 6px 4px rgb(0,0,0,0.2);
-display: flex;
-justify-content: center;
-align-items: center;
-flex-wrap: wrap;
-
-
-border-radius: 5%;
-background:crimson; 
-background:linear-gradient(-40deg,rgb(62,80,193,1) , rgb(29,146,226,1));
-
-
-
+  position: absolute;
+  width: max-content;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  background: linear-gradient(160deg, rgba(29, 146, 226, 0.15), rgba(124, 77, 255, 0.1));
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
 }
-
-
-
-
 
 form {
-position: relative;
-width: 25vw;
-height:73vh;   
-display: flex;
-justify-content: space-around;
-border-radius: 5%;
-flex-wrap: wrap;
-
-
+  position: relative;
+  width: 22vw;
+  height: 70vh;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 20px;
+  flex-wrap: wrap;
+  padding: 1vw;
 }
 
-
 .titulo-contactarme {
-position: relative;
-width: 100%;
-margin: 0vw 0vw 0vw 0vw;
-padding:1vh 0vh 1vh 0vh; 
-font-size: 2.3vw;
-color: white;
-display: flex;
-justify-content: center;
-align-items: center;
-font-family: 'Dancing Script' , cursive; 
-  
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 1vh 0;
+  font-size: 2vw;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-accent);
+  font-weight: 700;
 }
 
 .titulo-contactarme:before {
-content: "";
-position: absolute;
-width: 45%;
-height: 3px ;
-background:rgb(253,200,1);
-bottom:10px;
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--space-gold), transparent);
+  bottom: 5px;
+  border-radius: 2px;
 }
-
 
 label {
-width: 90%;
-font-size: 1.2vw;
-color: white;
-font-family: Segoe UI Symbol;
-padding:0vh 0vh 0vh 0vh; 
-
+  width: 90%;
+  font-size: 0.95vw;
+  font-weight: 400;
+  color: var(--text-secondary);
+  font-family: var(--font-body);
+  padding: 0;
 }
-
-
 
 input,
-textarea  {
-background:white;
-width:90%;
-height: 4.3vh;
-margin: 1vh 0vh 2vh 0vh;
-font-size: 1.2vw;
-font-family: Segoe UI Symbol;
-color: rgb(45,45,45);
-border: 0.45vh solid rgb(253,200,1);
-box-shadow: 5px 7px 10px 4px rgb(0, 0, 0, 0.2);
-border-radius: 1vw;
-outline: none;
-
+textarea {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  width: 90%;
+  height: 4.3vh;
+  margin: 0.5vh 0 1.5vh 0;
+  font-size: 1vw;
+  font-family: var(--font-body);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: none;
+  border-radius: 10px;
+  outline: none;
+  padding: 0 1vh;
+  transition: all 0.3s ease;
 }
 
+input:focus,
+textarea:focus {
+  border-color: var(--space-cyan);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 15px rgba(0, 229, 255, 0.1);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
 
 textarea {
-height: 30vh;
+  height: 25vh;
+  padding: 1vh;
+  resize: none;
 }
 
-
-
-
 button {
-width: 100%;
-height: 10%;
-  margin-top: 2vh;
-font-size: 2vw;
-color: white;
-background:orange;
-border-radius: 0.5vw; 
-border:none;
-box-shadow: 2px 4px 6px 2px rgb(0,0,0,0.2);
-font-family: Segoe UI Symbol;
-cursor: pointer;
-
+  width: 100%;
+  height: 10%;
+  margin-top: 1.5vh;
+  font-size: 1.2vw;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, var(--space-orange), #ff6d00);
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 4px 20px rgba(247, 119, 35, 0.3);
+  font-family: var(--font-body);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
 }
 
 button:hover {
-  background:linear-gradient(120deg,orange,darkorange);
+  background: linear-gradient(135deg, #ff6d00, var(--space-orange));
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(247, 119, 35, 0.4);
 }
 
+
+/* ===== NAVE ESPACIAL (derecha) ===== */
 .espacial {
   position: absolute;
   right: 10%;
-width: 15%;
-height: 67%;
-top:16.5%;  
-background: url("../gallery/nave2.png");
-background-size: cover;
-
-
+  width: 15%;
+  height: 67%;
+  top: 16.5%;
+  background: url("../gallery/nave2.png");
+  background-size: cover;
 }
 
 .espacial p {
   position: relative;
- right: 30%;
- top:45%;
-background:  linear-gradient(-40deg,rgb(62,80,193,0.9) ,rgb(37,129,217,0.9) );
-color:aqua;
-padding: 1vh;
-border-radius: 1vw;
-font-size:1.05vw ;
+  right: 30%;
+  top: 45%;
+  background: rgba(29, 146, 226, 0.15);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid var(--glass-border);
+  color: var(--space-cyan);
+  padding: 1vh;
+  border-radius: 10px;
+  font-size: 0.9vw;
+  font-weight: 300;
+  font-family: var(--font-body);
+  line-height: 1.4;
 }
-
 
 .espacial p i {
-position: absolute;
-padding: 0.2vh 1vh 0.2vh 1vh;
-left:-2.5vh;
-top:-1.5vh;
-color:yellow;
-background: rgb(37,129,217,0.9);
-border-radius: 50%;
-border-bottom: 0.4vh solid yellow;
-font-size: 1.2vw;
+  position: absolute;
+  padding: 0.3vh 0.8vh;
+  left: -2vh;
+  top: -1.2vh;
+  color: var(--space-gold);
+  background: linear-gradient(135deg, var(--space-accent), var(--space-purple));
+  border-radius: 50%;
+  border-bottom: 2px solid var(--space-gold);
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 700;
 }
 
 
-
-.contenedor-botones{
-position:absolute;
-
-right: 23%;
-width: 9vw;
-height: 7vh;
-
-border-bottom-left-radius: 1vw; 
- display: flex;
-   justify-content: center;
-   align-items: center;
-background:linear-gradient(-40deg,rgb(62,80,193,1) , rgb(29,146,226,1));
-box-shadow: 1px 5px 6px 3px rgb(0,0,0,0.2);
-
+/* ===== BOTONES DE TEMA ===== */
+.contenedor-botones {
+  position: absolute;
+  right: 23%;
+  width: 8vw;
+  height: 6vh;
+  border-bottom-left-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(29, 146, 226, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid var(--glass-border);
+  border-top: none;
+  border-right: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-
-
-
- .botones {
-position: relative;
-width: 95%;
-height: 80%;
-
-box-shadow: 0px 0px 6px 3px rgb(0,0,0,0.2);
-border-bottom-left-radius: 1vw;
- display: flex;
-   justify-content:space-around;
-   align-items: center;
-   overflow: hidden;
-   
-
+.botones {
+  position: relative;
+  width: 90%;
+  height: 80%;
+  border-bottom-left-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
 }
-
 
 .botones:before {
-content: "";
-position: absolute;
-width: 100%;
-height: 100%;
-
-background:linear-gradient(rgb(8,8,95),rgb(6,6,102,0.8),rgb(8,8,95)); 
-clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
-
-
-}
-
-
-
-.botones button {
-position: relative;
-width:2.2vw;
-height: 2.2vw; 
-border-radius: 50%;
-display: flex;
-justify-content: center;
-align-items: center;
-background:rgb(255,255,255,0.1); 
-border: 2px solid rgb(240,240,240,0.7);
-box-shadow: 1px 1px 4px 2px rgb(0,0,0,0.2);
-margin: 0vh 0vh 0vh 0vh;
-cursor: pointer;
-
-}
-
-.botones button:before {
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgb(255, 255, 255, 0);
+  background: linear-gradient(135deg, transparent 40%, rgba(124, 77, 255, 0.15) 100%);
+  clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
+}
+
+.botones button {
+  position: relative;
+  width: 2vw;
+  height: 2vw;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.botones button:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: scale(1.1);
+}
+
+.botones button i {
+  color: white;
+  font-size: 0.9vw;
 }
 
 
- .botones button i{  
-  color:white; 
-  font-size: 1.2vw;
-
-}
-
-  
-
-@media only screen and (min-width: 280px) and (max-width: 840px) {
+/* ===== RESPONSIVE MOBILE ===== */
+@media only screen and (max-width: 840px) {
 
   .seccion-contactar {
-    position :relative;
-  width:100vw;
-  height:180vh;
-  display: flex;
-      justify-content: center;
-      align-items: center;
-      
+    width: 100vw;
+    height: 180vh;
   }
-  
-  .contenedor-contactar {
-    position :relative;
-  width:95vw;
-  height:170vh;
-  border-radius: 1vw;
-  box-shadow: 1px 1px 20px 10px rgb(74,158,255,0.3);
-  display: flex;
-  flex-wrap: wrap-reverse;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  }
-  
 
+  .contenedor-contactar {
+    width: 92vw;
+    height: 170vh;
+    border-radius: 16px;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+  }
 
   .contenedor-1 {
-    position :relative;
-  width:30%;
-  height:100%;
-  background:linear-gradient(-40deg,rgb(62,80,193,1) ,rgb(37,129,217,1)  );
-  display:none;
-  justify-content: center;
-  align-items: center;
+    width: 100%;
+    height: auto;
+    display: none;
   }
+
   .contenedor-2 {
-    position :relative;
-  width:95%;
-  height:80vh;
+    width: 95%;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(0,0,0,0.1);
-  
+    background: rgba(0, 0, 0, 0.1);
   }
-  
-  
-  
 
-form {
-  position: relative;
-  width: 85vw;
-  height:72vh;
-  display: flex;
-  justify-content: space-around;
-  border-radius: 5%;
-  flex-wrap: wrap;
+  form {
+    width: 85vw;
+    height: 72vh;
+  }
 
-  
-}
+  .titulo-contactarme {
+    font-size: 3vh;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
 
+  .titulo-contactarme:before {
+    display: none;
+  }
 
+  label {
+    width: 90%;
+    font-size: 2.2vh;
+  }
 
-.titulo-contactarme {
-  position: relative;
-  width: 100%;
-  margin: 0vw 0vw 0vw 0vw;
-  padding:1vh 0vh 1vh 0vh; 
-  font-size: 3.2vh;
-  color: white;
-  font-family: Segoe UI Symbol;
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background:rgb(255,255,255,0.0);
-  box-shadow: none;
-  text-decoration: underline;
-}
+  input,
+  textarea {
+    width: 90%;
+    height: 4.3vh;
+    margin: 0.5vh 0 1.5vh 0;
+    font-size: 2vh;
+    border-radius: 8px;
+  }
 
+  textarea {
+    height: 25vh;
+  }
 
-label {
-  width: 90%;
-  font-size: 2.4vh;
-  color: white;
-  font-family: Segoe UI Symbol;
- padding:0vh 0vh 0vh 0vh; 
-  
-}
-
-  
-
-input,
-textarea  {
-  background:white;
-  width:90%;
-  height: 4.3vh;
-  margin: 1vh 0vh 2vh 0vh;
-  cursor: pointer;
-  font-size: 2.3vh;
-  font-family: Segoe UI Symbol;
-   
-  color: rgb(45,45,45);
-  border: 0.45vh solid rgb(253,200,1);
-  box-shadow: 5px 7px 10px 4px rgb(0, 0, 0, 0.2);
-  border-radius: 1vw;
-  outline: none;
-  
-}
-
-  
-textarea {
-  height: 30vh;
-}
-
-
-
-  
-
-
-
-  
-button {
-  width: 100%;
-  height: 10%;
-    margin-top: 2vh;
-font-size: 3vh;
-  color: white;
-  background: linear-gradient(120deg,gold,rgb(255,183,1,0.8));
-border-radius: 0.5vw; 
-border: none;
-box-shadow: 2px 4px 6px 2px rgb(0,0,0,0.2);
-  font-family: Segoe UI Symbol;
-  
-}
-
-
-
+  button {
+    width: 100%;
+    height: 10%;
+    margin-top: 1.5vh;
+    font-size: 2.5vh;
+    border-radius: 8px;
+  }
 
   .espacial {
     position: relative;
-    top:0%;
+    top: 0%;
     right: 0%;
-  width: 70%;
-  height: 65vh;
-  background: url("../gallery/nave2.png");
-  background-size: cover;
- 
-}
-
-.espacial p {
-  position: relative;
- right: 10%;
- top:45%;
-background:  linear-gradient(-40deg,rgb(62,80,193,0.9) ,rgb(37,129,217,0.9) );
-color:aqua;
-padding: 1.5vh;
-border-radius: 1vw;
-font-size:2.2vh ;
-}
-
-
-.espacial p i {
-position: absolute;
-padding: 0.2vh 1vh 0.2vh 1vh;
-left:-2.5vh;
-top:-1.5vh;
-color:yellow;
-background: rgb(37,129,217,0.9);
-border-radius: 50%;
-border-bottom: 0.5vh solid yellow;
-font-size: 4vw;
-}
-
-
-
-.contenedor-botones {
-  display: none;
-  
+    width: 70%;
+    height: 65vh;
+    margin: 0 auto;
   }
 
-  @media screen and (min-width:840px) {
-   
-form  {
-  
-  width: 70vw;
+  .espacial p {
+    right: 10%;
+    top: 45%;
+    font-size: 2vh;
+    border-radius: 8px;
+    padding: 1.2vh;
+  }
 
+  .espacial p i {
+    font-size: 3vw;
+  }
 
+  .contenedor-botones {
+    display: none;
+  }
 
-  
+  @media screen and (min-width: 840px) {
+    form {
+      width: 70vw;
     }
-
-
-     
-     }
-      
   }
+}

@@ -52,7 +52,7 @@ Swal.fire({
     position:"absolute",
   width:"100%",
   height:"100%",
-  background: fondo === "oscuro" ? "linear-gradient(rgb(8,8,95),rgb(6,6,102,0.8),rgb(8,8,95))" : "linear-gradient(132deg, rgb(2, 28, 75) 0.00%, rgb(36, 83, 255) 94.78%)" ,
+  background: fondo === "oscuro" ? "rgba(0,0,0,0.15)" : "transparent" ,
  
   }
   const FondoColor = (e) => {

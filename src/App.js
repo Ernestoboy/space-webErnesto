@@ -66,6 +66,15 @@ function App() {
   return (
     <div className="App">
 
+{/* ===== FONDO ESPACIAL ===== */}
+<div className="stars-layer-1"></div>
+<div className="stars-layer-2"></div>
+<div className="stars-layer-3"></div>
+<div className="nebula-glow"></div>
+<div className="planet-saturn">
+  <div className="saturn-ring"></div>
+</div>
+<div className="distant-planet"></div>
 
 <div className="Contenedor-navegacion" >
 <nav >
