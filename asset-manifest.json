@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/space-webErnesto/static/css/main.b2f44a38.css",
-    "main.js": "/space-webErnesto/static/js/main.b7ac9919.js",
+    "main.css": "/space-webErnesto/static/css/main.5a10ac6b.css",
+    "main.js": "/space-webErnesto/static/js/main.bf080b29.js",
     "static/js/453.254993ed.chunk.js": "/space-webErnesto/static/js/453.254993ed.chunk.js",
     "static/media/fa-solid-900.svg": "/space-webErnesto/static/media/fa-solid-900.ca408b63c26d83dbd1e4.svg",
     "static/media/fa-brands-400.svg": "/space-webErnesto/static/media/fa-brands-400.bc671f97630e1af81f65.svg",
@@ -25,7 +25,6 @@
     "static/media/laptop10.jpg": "/space-webErnesto/static/media/laptop10.d8ac71c873ca20da75f4.jpg",
     "static/media/visa3.png": "/space-webErnesto/static/media/visa3.db3f713ac04b6c9abdf9.png",
     "static/media/categorias1.svg": "/space-webErnesto/static/media/categorias1.dbf0a2dd8d137fefa2b7.svg",
-    "static/media/pin15.jpeg": "/space-webErnesto/static/media/pin15.f4ba2d857c31ba66c7dd.jpeg",
     "static/media/fa-regular-400.eot": "/space-webErnesto/static/media/fa-regular-400.08f9891a6f44d9546678.eot",
     "static/media/fa-regular-400.ttf": "/space-webErnesto/static/media/fa-regular-400.1495f578452eb676f730.ttf",
     "static/media/tec-sass1.png": "/space-webErnesto/static/media/tec-sass1.347ef7b85073159527d6.png",
@@ -46,12 +45,12 @@
     "index.html": "/space-webErnesto/index.html",
     "static/media/skill-icons--tailwindcss-light.svg": "/space-webErnesto/static/media/skill-icons--tailwindcss-light.36077f1c05f5e2510b49d309e5e03429.svg",
     "static/media/skill-icons--css.svg": "/space-webErnesto/static/media/skill-icons--css.8589ca03e89917ca472a7709fc751fd2.svg",
-    "main.b2f44a38.css.map": "/space-webErnesto/static/css/main.b2f44a38.css.map",
-    "main.b7ac9919.js.map": "/space-webErnesto/static/js/main.b7ac9919.js.map",
+    "main.5a10ac6b.css.map": "/space-webErnesto/static/css/main.5a10ac6b.css.map",
+    "main.bf080b29.js.map": "/space-webErnesto/static/js/main.bf080b29.js.map",
     "453.254993ed.chunk.js.map": "/space-webErnesto/static/js/453.254993ed.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b2f44a38.css",
-    "static/js/main.b7ac9919.js"
+    "static/css/main.5a10ac6b.css",
+    "static/js/main.bf080b29.js"
   ]
 }
