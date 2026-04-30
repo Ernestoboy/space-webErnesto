@@ -35,20 +35,10 @@ function App() {
   };
 
 
-  const navegacion = {
-    position: "relative",
-    width: "21vw",
-    height: "auto",
-    left:  navmovil  ? "-9vw" : "31vw" ,
-    borderTopLeftRadius:"5vw",
-    borderBottomLeftRadius:"5vw",
-    overflow: "hidden",
-    top:"0vh",
-    background: "linear-gradient(120deg,rgb(56,104,252,1), rgb(41,72,255,1))",
-    boxShadow: "0px 2px 6px 3px rgb(20,20,20,0.2)",
-    transition: "0.5s all ease"
-   
-    
+  const navPanelStyle = {
+    transform: navmovil ? "translateX(0)" : "translateX(110%)",
+    opacity: navmovil ? 1 : 0,
+    pointerEvents: navmovil ? "auto" : "none",
   }
 
 
@@ -88,15 +78,14 @@ function App() {
 
 
   
-  <div className="Contenedor-navegacion-movil" onClick={flan} ><i class="fa fa-bars"></i>
-
-  <nav style={navegacion}>
-  <p className="tab1-movil" onClick={onScroll()}><i class="fa fa-user"></i>Inicio</p>
-  <p className="tab2-movil" onClick={onScroll(enlacediseños)}><i class="fa fa-object-group"></i>Diseños</p>
-  <p className="tab3-movil" onClick={onScroll(enlaceskills)}><i class="fa fa-brain"></i>skills</p>
-  <p className="tab4-movil" onClick={onScroll(enlacecontactar)}><i class="fa fa-satellite"></i>contactar..</p>
-  
-  </nav>
+  <div className="Contenedor-navegacion-movil" onClick={flan}>
+    <i className="fa fa-bars"></i>
+    <nav style={navPanelStyle}>
+      <p className="tab1-movil" onClick={onScroll()}><i className="fa fa-user"></i>Inicio</p>
+      <p className="tab2-movil" onClick={onScroll(enlacediseños)}><i className="fa fa-object-group"></i>Diseños</p>
+      <p className="tab3-movil" onClick={onScroll(enlaceskills)}><i className="fa fa-brain"></i>Skills</p>
+      <p className="tab4-movil" onClick={onScroll(enlacecontactar)}><i className="fa fa-satellite"></i>Contactar</p>
+    </nav>
   </div>
 
 

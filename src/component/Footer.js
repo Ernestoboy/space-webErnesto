@@ -46,8 +46,8 @@ function Footer(props) {
         <i class="fa fa-envelope">
             <p>Gmail</p>
             </i>
-            <p>Correo: edgar.guti2009@gmail.com </p>
-        <CopyToClipboard text="edgar.guti2009@gmail.com">
+            <p>Correo: edgarulloa487@gmail.com </p>
+        <CopyToClipboard text="edgarulloa487@gmail.com">
         {copiado ?  <p className="copiado">Copiado en el portapapeles </p> : <p className="copiar" onClick={ () => setCopiado(true)}>Copiar</p>  }
 </CopyToClipboard>
 

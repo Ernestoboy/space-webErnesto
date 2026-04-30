@@ -792,6 +792,12 @@ input[id="3"]:checked~.pagination .pagination-item[for="3"] {
     height: 12vw;
   }
 
+  .overlay-visitar {
+    font-size: 1.6vh;
+    letter-spacing: 1px;
+    padding: 1.2vh 0;
+  }
+
   @media screen and (min-width: 540px) {
     .logo-tecnologias {
       height: 22vh;

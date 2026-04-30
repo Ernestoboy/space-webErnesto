@@ -334,54 +334,101 @@ body {
     display: none;
   }
 
+  /* ===== BOTÓN HAMBURGUESA MÓVIL ===== */
   .Contenedor-navegacion-movil {
     position: fixed;
     top: 0;
-    width: 11vw;
-    height: 7vh;
-    right: 0%;
+    right: 0;
+    width: auto;
+    height: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-end;
     z-index: 100000000;
-    background: linear-gradient(135deg, var(--space-orange), #ff6d00);
-    border-bottom-left-radius: 16px;
-    box-shadow: -2px 2px 15px rgba(247, 119, 35, 0.3);
-    font-size: 2.2vh;
     cursor: pointer;
   }
 
+  /* Botón toggle (hamburguesa) */
   .Contenedor-navegacion-movil > i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12vw;
+    height: 6.5vh;
+    min-width: 48px;
+    min-height: 44px;
     color: white;
-    font-size: 2.5vh;
+    font-size: 2.4vh;
+    background: linear-gradient(135deg, var(--space-orange), #ff6d00);
+    border-bottom-left-radius: 14px;
+    box-shadow:
+      -2px 2px 18px rgba(247, 119, 35, 0.45),
+      inset 0 1px 0 rgba(255,255,255,0.15);
+    transition: background 0.25s ease, box-shadow 0.25s ease;
+    pointer-events: none;
   }
 
+  /* Panel desplegable del menú */
+  .Contenedor-navegacion-movil nav {
+    position: absolute !important;
+    top: 6.5vh !important;
+    right: 0 !important;
+    left: auto !important;
+    width: 58vw !important;
+    max-width: 240px !important;
+    height: auto !important;
+    background: rgba(6, 6, 40, 0.92) !important;
+    backdrop-filter: blur(24px) !important;
+    -webkit-backdrop-filter: blur(24px) !important;
+    border: 1px solid rgba(247, 119, 35, 0.25) !important;
+    border-top: none !important;
+    border-right: none !important;
+    border-bottom-left-radius: 20px !important;
+    box-shadow:
+      -4px 6px 32px rgba(0, 0, 0, 0.55),
+      0 0 0 1px rgba(255,255,255,0.04) !important;
+    overflow: hidden !important;
+    border-radius: 0 !important;
+    border-bottom-left-radius: 20px !important;
+    transition: 0.35s all ease !important;
+  }
+
+  /* Tabs dentro del menú móvil */
   .tab1-movil, .tab2-movil, .tab3-movil, .tab4-movil {
-    color: white;
-    padding: 2vh 0;
-    margin: 0%;
+    color: rgba(255, 255, 255, 0.88);
+    padding: 1.8vh 5vw;
+    margin: 0;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    gap: 1vh;
+    gap: 2.5vw;
     font-family: var(--font-body);
-    font-size: 1.6vh;
-    font-weight: 400;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    transition: background 0.3s ease;
+    font-size: 1.9vh;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    transition: background 0.25s ease, color 0.25s ease, padding-left 0.2s ease;
+    cursor: pointer;
+  }
+
+  .tab4-movil {
+    border-bottom: none;
   }
 
   .tab1-movil:hover, .tab2-movil:hover, .tab3-movil:hover, .tab4-movil:hover {
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(247, 119, 35, 0.12);
+    color: #fff;
+    padding-left: 7vw;
+    border-left: 2px solid var(--space-orange);
   }
 
-  .Contenedor-navegacion-movil i {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2vh;
-    color: white;
+  /* Iconos dentro de los tabs */
+  .tab1-movil i, .tab2-movil i, .tab3-movil i, .tab4-movil i {
+    font-size: 1.7vh;
+    color: var(--space-orange);
+    width: 3vw;
+    text-align: center;
+    flex-shrink: 0;
   }
 
   @media screen and (min-width: 500px) {
