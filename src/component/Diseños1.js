@@ -43,7 +43,7 @@ function Diseños1(props) {
               <p>Diseños dinamicos</p>
               <a href="https://next-cube-one.vercel.app/" target="_blank" rel="noopener noreferrer" title="Visitar Cubestore">
                 <div class="img-5">
-                  <span class="overlay-visitar" style={{ borderRadius: '0 0 12px 12px' }}>Visitar web</span>
+                  <span class="overlay-visitar" style={{ borderRadius: '0 0 12px 12px' }}>Visitar web en desarrollo</span>
                 </div>
               </a>
             </div>
