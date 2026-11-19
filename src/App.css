@@ -252,7 +252,8 @@ body {
   left: -32%;
 }
 
-.tab1:hover, .tab2:hover, .tab3:hover, .tab4:hover {
+.tab1:hover, .tab2:hover, .tab3:hover, .tab4:hover,
+.tab1.active, .tab2.active, .tab3.active, .tab4.active {
   font-size: 1.05vw;
   background: linear-gradient(135deg, rgba(255, 152, 0, 0.9), rgba(255, 87, 34, 0.9));
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
@@ -416,6 +417,13 @@ body {
   }
 
   .tab1-movil:hover, .tab2-movil:hover, .tab3-movil:hover, .tab4-movil:hover {
+    background: rgba(247, 119, 35, 0.12);
+    color: #fff;
+    padding-left: 7vw;
+    border-left: 2px solid var(--space-orange);
+  }
+
+  .tab1-movil.active, .tab2-movil.active, .tab3-movil.active, .tab4-movil.active {
     background: rgba(247, 119, 35, 0.12);
     color: #fff;
     padding-left: 7vw;

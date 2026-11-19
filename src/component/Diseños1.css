@@ -404,7 +404,8 @@ input[id="3"]:checked~.pagination .pagination-item[for="3"] {
 }
 
 .img-2:hover .overlay-visitar,
-.img-5:hover .overlay-visitar {
+.img-5:hover .overlay-visitar,
+.img-6:hover .overlay-visitar {
   color: #ffffff; /* Se ilumina el texto en hover */
 }
 
@@ -412,8 +413,7 @@ input[id="3"]:checked~.pagination .pagination-item[for="3"] {
   position: relative;
   width: 22vw;
   height: 22vh;
-  background: url("../gallery/seccionTalleres.png");
-  background-size: cover;
+  overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   border: 2px solid rgba(255, 255, 255, 0.08);
   border-radius: 8px;
@@ -486,12 +486,32 @@ input[id="3"]:checked~.pagination .pagination-item[for="3"] {
   left: 1.5vw;
   width: 36.6vw;
   height: 33.5vh;
-  background: url("../gallery/Cubestore-modoOscuro.png");
-  background-size: cover;
-
   border-radius: 12px;
-
+  overflow: hidden;
   transition: transform 0.3s ease;
+}
+
+.slider-dinamico-track,
+.slider-mitiko-track,
+.slider-talleres-track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s ease-in-out;
+}
+
+.slide-dinamico,
+.slide-mitiko,
+.slide-talleres {
+  flex: 0 0 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img-5 .overlay-visitar {
+  z-index: 1;
 }
 
 .img-5:hover {
@@ -504,7 +524,7 @@ input[id="3"]:checked~.pagination .pagination-item[for="3"] {
   position: absolute;
   width: 51.15vw;
   height: max-content;
-  bottom: 0%;
+  bottom: 9vh;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -547,9 +567,9 @@ input[id="3"]:checked~.pagination .pagination-item[for="3"] {
 
 .img-6 {
   position: relative;
-  width: 45%;
-  height: 24vh;
-  background: url("../gallery/portafolio1.png");
+  width: 100%;
+  height: 100%;
+  background: url("https://res.cloudinary.com/dlvfscbsr/image/upload/v1795038467/image_16_qhidz4.png");
   background-size: cover;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
   border: 2px solid rgba(255, 255, 255, 0.08);
@@ -561,12 +581,18 @@ input[id="3"]:checked~.pagination .pagination-item[for="3"] {
   transform: scale(1.02);
 }
 
+.proyecto-mitiko-link {
+  position: relative;
+  display: block;
+  width: 45%;
+  height: 24vh;
+}
+
 .img-7 {
   position: relative;
   width: 45%;
   height: 24vh;
-  background: url("../gallery/portafolio2.png");
-  background-size: cover;
+  overflow: hidden;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
   border: 2px solid rgba(255, 255, 255, 0.08);
   border-radius: 10px;
@@ -747,6 +773,11 @@ input[id="3"]:checked~.pagination .pagination-item[for="3"] {
   }
 
   .img-6 {
+    width: 100%;
+    height: 22vh;
+  }
+
+  .proyecto-mitiko-link {
     width: 100%;
     height: 22vh;
   }

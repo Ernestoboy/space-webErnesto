@@ -1,5 +1,5 @@
 import "./App.css";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import "./component/fontawesome-free-5.15.1-web/css/all.min.css";
 
@@ -15,6 +15,37 @@ function App() {
   const enlacecontactar = useRef(null);
   const enlaceskills = useRef(null);
   const [navmovil, setNavmovil] = useState(false);
+  const [seccionActiva, setSeccionActiva] = useState("inicio");
+
+  useEffect(() => {
+    const secciones = [
+      { nombre: "diseños", ref: enlacediseños },
+      { nombre: "skills", ref: enlaceskills },
+      { nombre: "contactar", ref: enlacecontactar },
+    ];
+
+    const actualizarSeccionActiva = () => {
+      const lineaDeActivacion = window.innerHeight * 0.45;
+      let seccionActual = "inicio";
+
+      secciones.forEach(({ nombre, ref }) => {
+        if (ref.current?.getBoundingClientRect().top <= lineaDeActivacion) {
+          seccionActual = nombre;
+        }
+      });
+
+      setSeccionActiva(seccionActual);
+    };
+
+    actualizarSeccionActiva();
+    window.addEventListener("scroll", actualizarSeccionActiva, { passive: true });
+    window.addEventListener("resize", actualizarSeccionActiva);
+
+    return () => {
+      window.removeEventListener("scroll", actualizarSeccionActiva);
+      window.removeEventListener("resize", actualizarSeccionActiva);
+    };
+  }, []);
 
   const onScroll = (ref) => () => {
     if (!ref)
@@ -51,16 +82,16 @@ function App() {
 
       <div className="Contenedor-navegacion">
         <nav>
-          <p className="tab1" onClick={onScroll()}>
+          <p className={`tab1${seccionActiva === "inicio" ? " active" : ""}`} onClick={onScroll()}>
             Inicio
           </p>
-          <p className="tab2" onClick={onScroll(enlacediseños)}>
+          <p className={`tab2${seccionActiva === "diseños" ? " active" : ""}`} onClick={onScroll(enlacediseños)}>
             Diseños
           </p>
-          <p className="tab3" onClick={onScroll(enlaceskills)}>
+          <p className={`tab3${seccionActiva === "skills" ? " active" : ""}`} onClick={onScroll(enlaceskills)}>
             skills
           </p>
-          <p className="tab4" onClick={onScroll(enlacecontactar)}>
+          <p className={`tab4${seccionActiva === "contactar" ? " active" : ""}`} onClick={onScroll(enlacecontactar)}>
             contactar...
           </p>
         </nav>
@@ -69,16 +100,16 @@ function App() {
       <div className="Contenedor-navegacion-movil" onClick={flan}>
         <i className="fa fa-bars"></i>
         <nav style={navPanelStyle}>
-          <p className="tab1-movil" onClick={onScroll()}>
+          <p className={`tab1-movil${seccionActiva === "inicio" ? " active" : ""}`} onClick={onScroll()}>
             <i className="fa fa-user"></i>Inicio
           </p>
-          <p className="tab2-movil" onClick={onScroll(enlacediseños)}>
+          <p className={`tab2-movil${seccionActiva === "diseños" ? " active" : ""}`} onClick={onScroll(enlacediseños)}>
             <i className="fa fa-object-group"></i>Diseños
           </p>
-          <p className="tab3-movil" onClick={onScroll(enlaceskills)}>
+          <p className={`tab3-movil${seccionActiva === "skills" ? " active" : ""}`} onClick={onScroll(enlaceskills)}>
             <i className="fa fa-brain"></i>Skills
           </p>
-          <p className="tab4-movil" onClick={onScroll(enlacecontactar)}>
+          <p className={`tab4-movil${seccionActiva === "contactar" ? " active" : ""}`} onClick={onScroll(enlacecontactar)}>
             <i className="fa fa-satellite"></i>Contactar
           </p>
         </nav>

@@ -67,11 +67,11 @@
 
 .img-perfil {
   position: absolute;
-  background: url("../gallery/perfil-1.png");
-  width: 22vw;
-  height: 85vh;
-  background-size: cover;
-  top: 5vh;
+  background: url("https://res.cloudinary.com/dlvfscbsr/image/upload/v1795037718/OpenAI_Playground_2026-11-18_at_14.52.08_1_-Photoroom_lw0ukj.png") center / contain no-repeat;
+  width: 24vw;
+  height: 60vh;
+  border-radius: 0;
+  top: 27vh;
   left: 17%;
 }
 
@@ -430,9 +430,9 @@
   }
 
   .img-perfil {
-    width: 65vw;
-    height: 70vh;
-    top: 20vh;
+    width: 70vw;
+    height: 52vh;
+    top: 38vh;
     left: 10%;
   }
 
@@ -529,9 +529,9 @@
 
   @media screen and (min-width: 500px) {
     .img-perfil {
-      width: 65vw;
-      height: 90vh;
-      top: 0vh;
+      width: 70vw;
+      height: 56vh;
+      top: 34vh;
       left: 10%;
     }
   }
