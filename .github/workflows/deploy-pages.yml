@@ -19,4 +19,6 @@ jobs:
           node-version: 18
           cache: npm
       - run: npm ci
+      - run: git config --global user.name "github-actions[bot]"
+      - run: git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
       - run: CI=false npm run deploy
